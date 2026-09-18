@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us KATT COSmetics</title>
     <meta name="description" content="About KATT Cosmetics - our story, our mission, and our values"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
+    <!-- ============ HEADER: site logo + primary navigation ============ -->
     <header>
-        <a href="/index.html">KATT Cosmetics</a>
-        <nav aria-label="Primary navigation">
+        <a href="../index.html">KATT Cosmetics</a>
+        <!-- Hamburger button: hidden on desktop, shown below the 768px breakpoint (see CSS) -->
+        <button type="button" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">☰</button>
+        <nav aria-label="Primary navigation" id="primary-nav">
             <ul>
                 <li><a href="../index.html">HOME</a></li>
                 <li><a href="about.html" aria-current="page">ABOUT</a></li>
@@ -21,10 +27,12 @@
         </nav>
     </header>
     <main>
+        <!-- INTRO: short one-line brand statement -->
         <section aria-labelledby="about-heading">
             <h1 if="about-heading">About KATT Cosmetics</h1>
             <p>Made by makeup artists who wanted better options.</p>
         </section>
+        <!-- HISTORY: founding story, 2021 -> today -->
         <section aria-labelledby="history-heading">
             <h2 if="history-heding">Our History</h2>
             <p>KATT Cosmetics was founded in 2021 by a team of working makeup artistes tired by chooseing between salon quality pigment and drugstore pricing. it started with a single hero product - a 24-shade liquid foundation rage - before growing through word-of-mouth freelance MUAs into full range of face, eye and lip products.</p>
@@ -32,14 +40,17 @@
                     Today the brand operates through pop-up counters, select retail partners and this website - showcases for our full range , with all purchases made directy thrugh our team via WhatsApp, email and instagram.
                 </p>
         </section>
+        <!-- MISSION -->
         <section aria-labelledby="mission-heading">
             <h2 if="mission-heading">Our Mission</h2>
             <p>We believe that makeup should be accessible to everyone, regardless of their skin tone or budget. Our mission is to provide high-quality, affordable cosmetics that empower individuals to express themselves and feel confident in their own skin.</p>
         </section>
+        <!-- VISION -->
         <section aria-labelledby="vision-heading">
             <h2 if="vision-heading">Our Vision</h2>
             <p>Our vision is to become a leading cosmetics brand that is recognized for its commitment to inclusivity, sustainability, and innovation. We aim to create products that not only enhance beauty but also promote self-expression and creativity.</p>
         </section>
+        <!-- VALUES (long list) -->
         <section aria-labelledby="values-heading">
             <h2 if="values-heading">Our Values</h2>
             <ul>
@@ -64,6 +75,7 @@
             </ul>
             
         </section>
+        <!-- TARGET AUDIENCE: two customer groups this site is designed for -->
         <section aria-labelledby="=audience-heading">
             <h2 id="audience-heading">Who we're for</h2>
             <ol>
@@ -77,37 +89,39 @@
                     <article>
                         <h3>Freelance and salaried makeup artist</h3>
                         <p>
-                            Professionals who need bulk-buy options, full professional shade range, and formulas durable enoigh for client work. <a href="pages/muatradeportal.html">MUA TRADE PORTAL</a>
+                            Professionals who need bulk-buy options, full professional shade range, and formulas durable enoigh for client work. <a href="muatradeportal.html">MUA TRADE PORTAL</a>
                         </p>
                     </article>
                 </li>
             </ol>
         </section>
         <main>
+            <!-- ============ FOOTER: contact details + secondary navigation ============ -->
             <footer>
                 <section aria-labelledby="footer-contact-heading">
                     <h2 id="footer-contact-heading">Contact KATT Cosmetics</h2>
                     <p>
                         WhatsApp: <a href="https://wa.me/27216660140">+27 21 666 0140</a>
                     </p>
-                    <p>Email: <a href="malito:hello@kattcosmetics.co.za">hello@kattcosmetics.co.za</a>
+                    <p>Email: <a href="mailto:hello@kattcosmetics.co.za">hello@kattcosmetics.co.za</a>
                     </p>
-                    <p>Instagram: <a href="https://www.instagram.com/kattcosmetics">kattcosmetics</a></p>
+                    <p>Instagram: <a href="https://www.instagram.com/kattcosmetics/">@kattcosmetics</a></p>
                 </section>
                 <nav aria-labelledby="Footer navigation">
                     <ul>
-                        <li><a href="/index.html">HOME</a></li>
-                       <li><a href="about.html">ABOUT</a></li>
-                       <li><a href="product.html">PRODUCTS</a></li>
-                       <li><a href="contact.html">CONTACT</a></li>
-                       <li><a href="muatradeportal.html">MUA TRADE PORTAL</a></li>
-                       <li><a href="enquiry.html">ENQUIRY</a></li>
+                        <li><a href="../index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="product.html">PRODUCTS</a></li>
+                        <li><a href="muatradeportal.html">MUA TRADE PORTAL</a></li>
+                        <li><a href="enquiry.html">ENQUIRE TO PURCHASE</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
                 
                     </ul>
                 </nav>
-                <p>&copy; 2026 KATT Cosmetics. ALL rights reserved.</p>
+                <p>&copy; 2026 KATT Cosmetics. ALL </p>
             </footer>
-            <script src="../assets/js/wishlist.js"></script>
+            <!-- Wishlist functionality only — no purchasing/cart logic on this page -->
+            <script src="../js/script.js"></script>
         </main>
         
 </body>

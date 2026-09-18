@@ -5,15 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>24HR Matte Foundation - KATT Cosmetics</title>
     <meta name="description" content="24HR Matte Foundation - full coverage, 24- shade professional foundation. Add to wishlist or enquire to purchse via WhatsApp, email or instagram."/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
+    <!-- ============ HEADER: site logo + primary navigation ============ -->
     <header>
-        <a href="/index.html">KATT Cosmetics</a>
-        <nav aria-label="Priamry navigation">
+        <a href="../index.html">KATT Cosmetics</a>
+        <!-- Hamburger button: hidden on desktop, shown below the 768px breakpoint (see CSS) -->
+        <button type="button" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">☰</button>
+        <nav aria-label="Primary navigation" id="primary-nav">
             <ul>
-                <li><a href=".../index.html">HOME</a></li>
+                <li><a href="../index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
-                <li><a href="product.html" aria-current="pages">PRODUCT</a><
+                <li><a href="product.html" aria-current="page">PRODUCT</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
                 <li><a href="muatradeportal.html">MUA TRADE PORTAL</a></li>
                 <li><a href="enquiry.html">ENQUIRY</a></li>
@@ -21,16 +27,18 @@
         </nav>
     </header>
     <main> 
+        <!-- BREADCRUMB: Home > Products > current product -->
         <nav aria-label="Breadcrumb">
             <ol>
-                <li><a href="/index.html">HOME</a></li>
+                <li><a href="../index.html">HOME</a></li>
                 <li><a href="product.html">PRODUCTS</a></li>
                 <li aria-current="page">24HR Matte Foundation</li>
             </ol>
         </nav>
+        <!-- PRODUCT DETAIL: image, price, description, spec list (<dl>), shade picker, and wishlist/purchase actions -->
         <article aria-labelledby="product-heading">
             <figure>
-                <img src="assets\images\015903514-1.webp" alt="24HR Matte Foundation bottle, front view" width="400" height="400"/>
+                <img src="../assets/images/015903514-1.webp" alt="24HR Matte Foundation bottle, front view" width="400" height="400"/>
                 <figcaption>24HR Matte Foundation - full coverage, 24- shade professional foundation</figcaption>
             </figure>
             <h1 id="product-heading">24HR Matte Foundation</h1>
@@ -79,9 +87,10 @@
                 <p>
                     <a href="enquiry.html">Enquire to Purchase</a> |
                     <a href="https://wa.me/27216660140">Ask on WhatsApp</a> |
-                    <a href="malito:hello@kattcosmetics.co.za">Email us</a> |
+                    <a href="mailto:hello@kattcosmetics.co.za">Email us</a> |
                 </p>
         </article>
+        <!-- RELATED PRODUCTS: each card has its own wishlist button (data-product-id) -->
         <section aria-labelledby="related-heading">
             <h2 id="related-heading">You might also like</h2>
             <ul>
@@ -111,12 +120,14 @@
                 </li>
             </ul>
         </section>
+        <!-- WISHLIST DISPLAY: populated dynamically by js/script.js from localStorage, not hardcoded -->
         <section aria-labelledby="wishlist-heading">
             <h2 id="wishlist-heading">Your wishlist</h2>
             <p ide="wishlist-emoty-message">Your wishlist is empty. Add products above to save them here.</p>
             <ul id="wishlist-list"></ul>
         </section>
     </main>
+    <!-- ============ FOOTER: contact details + secondary navigation ============ -->
     <footer>
         <section aria-labelledby="footer-contact-heading">
             <h2 id="footer-contact-heading">Contact KATT Cosmetics</h2>
@@ -126,15 +137,17 @@
         </section>    
         <nav aria-label="Footer navigation">
             <ul>
-                <li><a href="/index.html">HOME</a></li>
+                <li><a href="../index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="product.html">PRODUCTS</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
-                <li><a href="muatradeportal.html">MUA TRADE PORTAL</a></li>
-                <li><a href="enquiry.html">ENQUIRY</a></li>
+                <li><a href="muatradeportal.html">MUA Trade Portal</a></li>
+                <li><a href="enquiry.html">Enquire TO PURCHASE</a></li>
             </ul>
         </nav>
         <p>&copy; 2026 KATT Cosmetics. All rights reserved.</p>
     </footer>
+    <!-- Wishlist functionality — powers the "Add to Wishlist" buttons and the wishlist list above -->
+    <script src="../js/script.js"></script>
 </body>
 </html>

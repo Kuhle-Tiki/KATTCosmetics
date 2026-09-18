@@ -5,30 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MUA Trade Portal — KATT Cosmetics</title>
   <meta name="description" content="Apply for a KATT Cosmetics trade account — bulk pricing and professional-grade shade ranges for makeup artists." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
  
+  <!-- ============ HEADER: site logo + primary navigation ============ -->
   <header>
-    <a href="/index.html">KATT Cosmetics</a>
-    <nav aria-label="Primary navigation">
+    <a href="../index.html">KATT Cosmetics</a>
+    <!-- Hamburger button: hidden on desktop, shown below the 768px breakpoint (see CSS) -->
+        <button type="button" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">☰</button>
+        <nav aria-label="Primary navigation" id="primary-nav">
       <ul>
-       <li><a href="...../index.html">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="product.html">PRODUCTS</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-        <li><a href="muatradeportal.html"aria-current="page">MUA TRADE PORTAL</a></li>
-        <li><a href="enquiry.html">ENQUIRY</a></li>
+       <li><a href="../index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="product.html">PRODUCTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="muatradeportal.html" aria-current="page">MUA TRADE PORTAL</a></li>
+                <li><a href="enquiry.html">ENQUIRY</a></li>
       </ul>
     </nav>
   </header>
  
   <main>
  
+    <!-- INTRO -->
     <section aria-labelledby="trade-heading">
       <h1 id="trade-heading">MUA Trade Portal</h1>
       <p>Bulk pricing, professional-only shade sets, and priority restocks — built for freelance and salaried makeup artists who need product they can rely on for client work.</p>
     </section>
  
+    <!-- BENEFITS: 3 perk cards for a trade account -->
     <section aria-labelledby="trade-benefits-heading">
       <h2 id="trade-benefits-heading">Trade account benefits</h2>
       <ul>
@@ -53,11 +61,13 @@
       </ul>
     </section>
  
+    <!-- ELIGIBILITY: who can apply -->
     <section aria-labelledby="trade-eligibility-heading">
       <h2 id="trade-eligibility-heading">Who can apply</h2>
       <p>The MUA Trade Portal is open to freelance makeup artists, salon and studio owners, film/TV makeup departments, and makeup educators. Applications are reviewed by our team — this is not an instant sign-up.</p>
     </section>
  
+    <!-- APPLICATION FORM: front-end only, action="#" for now -->
     <section aria-labelledby="trade-form-heading">
       <h2 id="trade-form-heading">Trade account application</h2>
       <form action="#" method="post">
@@ -117,6 +127,7 @@
  
   </main>
  
+  <!-- ============ FOOTER: contact details + secondary navigation ============ -->
   <footer>
     <section aria-labelledby="footer-contact-heading">
       <h2 id="footer-contact-heading">Contact KATT Cosmetics</h2>
@@ -126,17 +137,18 @@
     </section>
     <nav aria-label="Footer navigation">
       <ul>
-        <li><a href="/index.html">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="product.html">PRODUCTS</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-        <li><a href="muatradeportal.html">MUA TRADE PORTAL</a></li>
-        <li><a href="enquiry.html">ENQUIRY</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="muatradeportal.html">MUA Trade Portal</a></li>
+        <li><a href="enquiry.html">Enquire to Purchase</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
     <p>&copy; 2026 KATT Cosmetics. All rights reserved.</p>
   </footer>
  
-  <script src="../assets/js/wishlist.js"></script>
+  <!-- Wishlist functionality only — no purchasing/cart logic on this page -->
+  <script src="../js/script.js"></script>
 </body>
 </html>

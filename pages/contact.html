@@ -5,15 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact US - KATT Cosmetics</title>
     <meta name="description" content="Contact KATT Cosmetics - customer support, FAGs, and store Locations"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
+    <!-- ============ HEADER: site logo + primary navigation ============ -->
     <header>
-        <a href="/index.html">KATT Cosmetics</a>
-        <nav aria-label="Primary navigation">
+        <a href="../index.html">KATT Cosmetics</a>
+        <!-- Hamburger button: hidden on desktop, shown below the 768px breakpoint (see CSS) -->
+        <button type="button" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">☰</button>
+        <nav aria-label="Primary navigation" id="primary-nav">
             <ul>
-                <li><a href="..../index.html">HOME</a></li>
+                <li><a href="../index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
-                <li><a href="product.html">PRODUCT</a></li>
+                <li><a href="product.html">PRODUCTS</a></li>
                 <li><a href="contact.html" aria-current="page">CONTACT</a></li>
                 <li><a href="muatradeportal.html">MUA TRADE PORTAL</a></li>
                 <li><a href="enquiry.html">ENQUIRY</a></li>
@@ -22,10 +28,12 @@
 
     </header>
     <main>
+        <!-- INTRO -->
         <section aria-labelledby="contact-heading">
             <h1 id="contact-heading">Get in Touch</h1>
             <p>Questions about a product, an existing enquiry or something else? Reach us directly - we typically reply within 1-2 business days.</p>
         </section>
+        <!-- DIRECT CONTACT DETAILS: WhatsApp / email / Instagram / hours, shown as a definition list -->
         <section aria-labelledby="contact-details-heading">
             <h2 id="contact-details-heading">Direct contact details</h2>
             <dl>
@@ -39,6 +47,7 @@
                 <dd>Mon-Fri, 9AM-5PM SAST</dd>
             </dl>
         </section>
+        <!-- CONTACT FORM: front-end only, action="#" — real submission handled by a backend/form service later -->
         <section aria-labelledby="contact-form-heading">
             <h2 id="contact-form-heading">Send a message</h2>
             <form action="#" method="post">
@@ -68,6 +77,7 @@
                 </p>
             </form>
         </section> 
+        <!-- FAQ: uses native <details>/<summary> so it works with zero JavaScript -->
         <section aria-labelledby="faq-heading">
             <h2 id="faq-heading">Frequently asked questions</h2>
             <details>
@@ -94,6 +104,7 @@
                     Yes, all KATT Cosmetics products are cruelty-free and not tested on animals.
             </details>
         </section>
+        <!-- STORE LOCATOR: real HTML <table> with pop-up/retail locations -->
         <section aria-labelledby="stores-heading" id="stores">
             <h2 id="stores-heading">Store locations</h2>
             <p>Find us at a pop-up store or event near you. Check our Instagram for the latest updates on where to find KATT Cosmetics in person.</p>
@@ -127,6 +138,7 @@
               
             
     </main>
+    <!-- ============ FOOTER: contact details + secondary navigation ============ -->
     <footer>
         <section aria-labelledby="footer-contact-heading">
             <h2 id="footer-contact-heading">Contact</h2>
@@ -138,17 +150,17 @@
         </section>
         <nav aria-label="Footer navigation">
             <ul>
-                <li><a href="/index.html">HOME</a></li>
+                <li><a href="../index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="product.html">PRODUCTS</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
-                <li><a href="muatradeportal.html">MUA TRADE PORTAL</a></li>
-                <li><a href="enquiry.html">ENQUIRY</a></li>
-                
+                <li><a href="muatradeportal.html">MUA Trade Portal</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
             </ul>
         </nav>
         <p>&copy; 2026 KATT Cosmetics. All rights reserved.</p>
     </footer>
-    <script src="../assets/js/wishlist.js"></script>
+    <!-- Wishlist functionality only — no purchasing/cart logic on this page -->
+    <script src="../js/script.js"></script>
 </body>
 </html> 

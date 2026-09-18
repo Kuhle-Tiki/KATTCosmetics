@@ -5,40 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Enquire to Purchase — KATT Cosmetics</title>
   <meta name="description" content="KATT Cosmetics does not sell online. Submit a purchase enquiry and our team will confirm availability, pricing, and next steps via WhatsApp, email, or phone." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
  
+  <!-- ============ HEADER: site logo + primary navigation ============ -->
   <header>
-    <a href="index.html">KATT Cosmetics</a>
-    <nav aria-label="Primary navigation">
+    <a href="../index.html">KATT Cosmetics</a>
+    <!-- Hamburger button: hidden on desktop, shown below the 768px breakpoint (see CSS) -->
+        <button type="button" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">☰</button>
+        <nav aria-label="Primary navigation" id="primary-nav">
       <ul>
-        <li><a href="....../index.html">HOME</a></li>
-      <li><a href="about.html">ABOUT</a></li>
-      <li><a href="product.html">PRODUCTS</a></li>
-      <li><a href="contact.html">CONTACT</a></li>
-      <li><a href="muatradeportal.html">MUA TRADE PORTAL</a></li>
-      <li><a href="enquiry.html" aria-current="page">ENQUIRY</a></li>
+        <li><a href="../index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="product.html">PRODUCTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="muatradeportal.html">MUA TRADE PORTAL</a></li>
+                <li><a href="enquiry.html" aria-current="page">ENQUIRE TO PURCHASE</a></li>
       </ul>
     </nav>
   </header>
  
   <main>
  
+    <!-- INTRO: explains this site does not process payments -->
     <section aria-labelledby="enquiry-heading">
       <h1 id="enquiry-heading">Enquire to purchase</h1>
       <p>KATT Cosmetics does not process payments through this website. Fill in the form below with the product(s) you're interested in, and our team will contact you via your preferred method to confirm availability, pricing, and how to complete your purchase.</p>
     </section>
  
+    <!-- HOW IT WORKS: 4-step explanation of the enquiry-based buying process -->
     <section aria-labelledby="how-it-works-heading">
       <h2 id="how-it-works-heading">How it works</h2>
       <ol>
-        <li>Browse our <a href="product.html">Product pages</a> and note down what you're interested in.
+        <li>Browse our <a href="product.html">product pages</a> and note down what you're interested in.</li>
         <li>Submit the enquiry form below, or contact us directly via WhatsApp, email, or phone.</li>
         <li>Our team confirms stock, pricing, and delivery or collection options with you.</li>
         <li>Payment and delivery are arranged directly with our team — not through this website.</li>
       </ol>
     </section>
  
+    <!-- PURCHASE ENQUIRY FORM: front-end only, action="#" for now -->
     <section aria-labelledby="enquiry-form-heading">
       <h2 id="enquiry-form-heading">Purchase enquiry form</h2>
       <form action="#" method="post">
@@ -76,6 +85,7 @@
       </form>
     </section>
  
+    <!-- ALTERNATIVE CONTACT: direct WhatsApp/email/Instagram links for anyone who skips the form -->
     <section aria-labelledby="direct-contact-heading">
       <h2 id="direct-contact-heading">Prefer to contact us directly?</h2>
       <ul>
@@ -87,6 +97,7 @@
  
   </main>
  
+  <!-- ============ FOOTER: contact details + secondary navigation ============ -->
   <footer>
     <section aria-labelledby="footer-contact-heading">
       <h2 id="footer-contact-heading">Contact KATT Cosmetics</h2>
@@ -96,17 +107,18 @@
     </section>
     <nav aria-label="Footer navigation">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="product.html">PRODUCTS</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-        <li><a href="muatradeportal.html">MUA TRADE PORTAL</a></li>
-        <li><a href="enquiry.html">ENQUIRY</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="muatradeportal.html">MUA Trade Portal</a></li>
+        <li><a href="enquiry.html">Enquire to Purchase</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
     <p>&copy; 2026 KATT Cosmetics. All rights reserved.</p>
   </footer>
  
-  <script src="../assets/js/wishlist.js"></script>
+  <!-- Wishlist functionality only — no purchasing/cart logic on this page -->
+  <script src="../js/script.js"></script>
 </body>
 </html>

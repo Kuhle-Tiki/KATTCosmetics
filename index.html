@@ -5,22 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KATT Cosmetics - Professional Makeup, Made Acessible</title>
     <meta name="description" content="KATT Cosmetics - professionalrofessional-grade makeup for MUAs and everyday beauty lovers. Enquire via WhatsApp, email, or phone. "/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <!-- ============ HEADER: site logo + primary navigation ============ -->
     <header>
         <a href="index.html">KATT Cosmetics</a>
         <nav aria-label="Primary navigation">
             <ul>
-                <li><a href="/index.html" aria-current="page">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="product.html">PRODUCTS</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-                <li><a href="muatradeportal.html">MUA TRADE PORTAL</a></li>
-                <li><a href="enquiry.html">ENQUIRY</a></li>
+                <li><a href="index.html" aria-current="page">HOME</a></li>
+                <li><a href="pages/about.html">ABOUT</a></li>
+                <li><a href="pages/product.html">PRODUCTS</a></li>
+                <li><a href="pages/contact.html">CONTACT</a></li>
+                <li><a href="pages/muatradeportal.html">MUA TRADE PORTAL</a></li>
+                <li><a href="pages/enquiry.html">ENQUIRY</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <!-- HERO: main banner introducing the brand, styled dark in Part 2 CSS -->
         <section aria-labelledby="hero-heading">
             <h1 id="hero-heading">Professional Makeup, Made Accessible</h1>
             <p>KATT Cosmetics is a professional makeup brand for backstage artists and everyday beauty lovers. browse our prodeucts below, then reach out via Whatsapp, email, or phone - we dont directly sell through website.</p>
@@ -29,6 +34,7 @@
                 <a href="pages/enquiry.html">Make an Enquiry</a>
             </p>
         </section>
+        <!-- HOW TO BUY: explains there is no online checkout — every product links out to WhatsApp/email/phone instead -->
         <section aria-labelledby="how to buy heading">
             <h2 id="how to buy heading">How to Buy</h2>
             <p>We do not sell directly through our website. 
@@ -37,10 +43,11 @@
                 provide you with the necessary information.</p>
                 <ul>
                     <li><a href="https://wa.me/27216661340">Phone: +27 21 666 1340</a></li>
-                    <li><a href="malito:hello@kattcosmetics.co.za">Email: hello@kattcosmetics.co.za</a></li>
+                    <li><a href="mailto:hello@kattcosmetics.co.za">Email: hello@kattcosmetics.co.za</a></li>
                     <li><a href="https://www.instagram.com/kattcosmetics/">Instagram: @kattcosmetics</a></li>
                 </ul>
         </section>
+        <!-- CATEGORY GRID: quick links into the product page by category -->
         <section aria-labelledby="categories-heading">
             <h2 id="Categories-heading">Shop by Category</h2>
             <ul>
@@ -74,6 +81,7 @@
                 </li>    
             </ul>
         </section>
+        <!-- FEATURED PRODUCTS: each card has a wishlist button (data-product-id) handled by js/script.js -->
         <section aria-labelledby="featured-heading">
             <h2 id="featured-heading">Featured products</h2>
             <ul>
@@ -115,15 +123,17 @@
                 </li>
             </ul>
         </section>
+        <!-- NEWSLETTER SIGNUP: front-end only for now, form action="#" — see js/script.js for the placeholder submit handler -->
         <section aria-labelledby="newsletter-heading">
             <h2 id="newsletter-heading">Stay updated</h2>
             <p>Sign up for launch news and tutorials. We dont sell anything through this form - it's for email updates only.</p>
-            <form action="#" methd="post">
-                <label for="email" id="newsletter-email" name="email" required/>
+            <form action="#" method="post">
+                <label for="email" id="newsletter-email" name="email" required>Email:</label>
                 <button type="submit">Subscribe</button>
             </form>
         </section>
     </main>
+    <!-- ============ FOOTER: contact details + secondary navigation, repeated on every page ============ -->
     <footer>
         <section aria-labelledby="footer-contact-heading">
             <h2 id="footer-contact-heading">Contact KATT Cosmetics</h2>
@@ -133,17 +143,18 @@
         </section>
         <nav aria-label="Footer navigation">
             <ul>
-                <li><a href="/index.html">HOME</a></li>
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="pages/about.html">ABOUT</a></li>
                 <li><a href="pages/product.html">PRODUCTS</a></li>
                 <li><a href="pages/contact.html">CONTACT</a></li>
-                <li><a href="pages/muatradeportal.html">MUA TRADE PORTAL</a></li>
-                <li><a href="pages/enquiry.html">ENQUIRY</a></li>
+                <li><a href="pages/muatradeportal.html">MUA Trade Portal</a></li>
+                <li><a href="pages/enquiry.html">Enquiry</a></li>
             </ul>
         </nav>
         <p>&copy; 2026 KATT Cosmetics. All rights reserved.</p>
     </footer>
-    <script src="../KATTCosmetics/assets/js/wishlist.js"></script>
+    <!-- Wishlist functionality only — no purchasing/cart logic, this site does not sell online -->
+    <script src="js/script.js"></script>
     
 </body>
 </html>
