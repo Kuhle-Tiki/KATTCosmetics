@@ -124,6 +124,16 @@
   <script>
     document.getElementById("enquiryForm").addEventListener("submit", function(event) {
       event.preventDefault();
-    })
+
+      const name = document.getElementById("pe-name").value;
+      const product = document.getElementById("pe-product").value;
+      const quantity = document.getElementById("pe-quantity").value;
+      const contactMethod = document.getElementById("pe-contact-method").value;
+
+      document.getElementById("enquiryResponse").textContent = "Thank you, " + name + "! Your enquiry for " + quantity + " of " + product + " has been received. We will contact you via " + contactMethod + " shortly.";
+
+      this.reset();
+    });
+    </script>
 </body>
 </html>
