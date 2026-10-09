@@ -50,7 +50,7 @@
     <!-- PURCHASE ENQUIRY FORM: front-end only, action="#" for now -->
     <section aria-labelledby="enquiry-form-heading">
       <h2 id="enquiry-form-heading">Purchase enquiry form</h2>
-      <form action="#" method="post">
+      <form id="enquiryForm">
         <p>
           <label for="pe-name">Full name</label><br />
           <input type="text" id="pe-name" name="name" required />
@@ -83,6 +83,7 @@
           <button type="submit">Submit enquiry</button>
         </p>
       </form>
+      <p id="enquiryResponse" role="status"></p>
     </section>
  
     <!-- ALTERNATIVE CONTACT: direct WhatsApp/email/Instagram links for anyone who skips the form -->
@@ -120,5 +121,6 @@
  
   <!-- Wishlist functionality only — no purchasing/cart logic on this page -->
   <script src="../js/script.js"></script>
+  
 </body>
 </html>
