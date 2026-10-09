@@ -50,6 +50,7 @@
     <!-- PURCHASE ENQUIRY FORM: front-end only, action="#" for now -->
     <section aria-labelledby="enquiry-form-heading">
       <h2 id="enquiry-form-heading">Purchase enquiry form</h2>
+      <!-- The form below is front-end only. In a real-world scenario, the form would submit to a backend service or email handler. -->
       <form id="enquiryForm">
         <p>
           <label for="pe-name">Full name</label><br />
@@ -122,16 +123,20 @@
   <!-- Wishlist functionality only — no purchasing/cart logic on this page -->
   <script src="../js/script.js"></script>
   <script>
+    // Handle the enquiry form submission
     document.getElementById("enquiryForm").addEventListener("submit", function(event) {
       event.preventDefault();
 
+      // Get form values
       const name = document.getElementById("pe-name").value;
       const product = document.getElementById("pe-product").value;
       const quantity = document.getElementById("pe-quantity").value;
       const contactMethod = document.getElementById("pe-contact-method").value;
 
+      // Display a confirmation message to the user
       document.getElementById("enquiryResponse").textContent = "Thank you, " + name + "! Your enquiry for " + quantity + " of " + product + " has been received. We will contact you via " + contactMethod + " shortly.";
 
+      // Reset the form after submission
       this.reset();
     });
     </script>

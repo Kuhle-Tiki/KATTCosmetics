@@ -177,11 +177,16 @@
             const subject = document.getElementById('c-subject').value;
             const message = document.getElementById('c-message').value;
 
+            // Construct the email subject and body
             const emailSubject = "KATT Cosmetics - " + subject;
 
+            // Construct the email body with line breaks for better readability
             const emailBody = "Name:" + name + "\n" + "Email:" + email + "\n" + "Message type: " + subject + "\n\n" + "Message:\n" + message;
 
-            con
+            const mailLink = "mailto:hello@kattcosmetics.co.za?subject=" + encodeURIComponent(emailSubject) + "&body=" + encodeURIComponent(emailBody);
+
+            // Open the user's default email client with the pre-filled email
+            document.getElementById("contactResponse").textcontent = "Your message has been prepared. Your email application" + "will open so you can review and send it. If your email application does not open, please contact us directly via WhatsApp or email.";
           
         });
      
