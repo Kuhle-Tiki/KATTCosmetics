@@ -121,6 +121,9 @@
  
   <!-- Wishlist functionality only — no purchasing/cart logic on this page -->
   <script src="../js/script.js"></script>
-  
+  <script>
+    document.getElementById("enquiryForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+    })
 </body>
 </html>
