@@ -110,4 +110,12 @@
       anchor.insertAdjacentElement('afterend', s);
       el.setAttribute('aria-describedby', id);
     }
-    return s;  
+    return s;
+}
+ function setError(el, msg) {
+    errorSpan(el).textContent = msg;
+    el.classList.toggle('is-invalid', !!msg);
+    el.classList.toggle('is-valid', !msg && trim(el.value) !== '');
+    el.setAttribute('aria-invalid', msg ? 'true' : 'false');
+    return !msg;
+  } 
