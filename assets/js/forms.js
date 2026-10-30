@@ -83,3 +83,18 @@
         await ajaxSubmit({ form: 'newsletter', ...data });
         return { type: 'success', message: 'Thanks for subscribing! Launch news and tutorials are on their way.', reset: true };
       }
+    },
+    tradeForm: {
+      fields: {
+        't-name': { rule: rules.name },
+        't-email': { rule: rules.email },
+        't-business': { rule: rules.textMax(80, 'Business name'), optional: true },
+        't-portfolio': { rule: rules.optUrl, optional: true },
+        't-message': { rule: rules.textMax(800, 'Your description'), optional: true, counter: 800 }
+      },
+      onValid: async (form, data) => {
+        await ajaxSubmit({ form: 'trade-application', ...data });
+        return { type: 'success', message: 'Thank you, ' + data['t-name'].split(' ')[0] + '! Your trade application has been received. Our team will review it and contact you.', reset: true };
+      }
+    }
+  };
