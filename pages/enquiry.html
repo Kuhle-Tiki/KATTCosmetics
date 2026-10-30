@@ -1,144 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Enquire to Purchase — KATT Cosmetics</title>
-  <meta name="description" content="KATT Cosmetics does not sell online. Submit a purchase enquiry and our team will confirm availability, pricing, and next steps via WhatsApp, email, or phone." />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquire to Purchase Professional Makeup | KATT Cosmetics</title>
+    <meta name="description" content="Enquire to purchase KATT Cosmetics makeup. Submit the form for an instant price and availability estimate; our team then confirms your order.">
+    <meta name="robots" content="index, follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://tile.openstreetmap.org; connect-src 'self' https://formspree.io; object-src 'none'; base-uri 'self'">
+    <link rel="canonical" href="https://kuhle-tiki.github.io/KATTCosmetics/pages/enquiry.html">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231a1a1a'/%3E%3Ctext x='50' y='72' font-size='64' text-anchor='middle' fill='%23e6007a' font-family='Arial' font-weight='700'%3EK%3C/text%3E%3C/svg%3E">
+    <!-- Open Graph tags: control how the page looks when shared on social media -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="KATT Cosmetics">
+    <meta property="og:title" content="Enquire to Purchase Professional Makeup | KATT Cosmetics">
+    <meta property="og:description" content="Enquire to purchase KATT Cosmetics makeup. Submit the form for an instant price and availability estimate; our team then confirms your order.">
+    <meta property="og:url" content="https://kuhle-tiki.github.io/KATTCosmetics/pages/enquiry.html">
+    <meta property="og:image" content="https://kuhle-tiki.github.io/KATTCosmetics/assets/images/matte-foundation.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/part3.css">
 </head>
 <body>
- 
-  <!-- ============ HEADER: site logo + primary navigation ============ -->
-  <header>
-    <a href="../index.html">KATT Cosmetics</a>
-    <!-- Hamburger button: hidden on desktop, shown below the 768px breakpoint (see CSS) -->
-        <button type="button" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">☰</button>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <!-- ============ HEADER: site logo + primary navigation ============ -->
+    <header>
+        <a href="../index.html">KATT Cosmetics</a>
+        <!-- Hamburger button: hidden on desktop, shown below 700px (see part3.css), toggled by enhancements.js -->
+        <button type="button" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">&#9776;</button>
         <nav aria-label="Primary navigation" id="primary-nav">
-      <ul>
-        <li><a href="../index.html">HOME</a></li>
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="product.html">PRODUCTS</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
                 <li><a href="muatradeportal.html">MUA TRADE PORTAL</a></li>
-                <li><a href="enquiry.html" aria-current="page">ENQUIRE TO PURCHASE</a></li>
-      </ul>
-    </nav>
-  </header>
- 
-  <main>
- 
-    <!-- INTRO: explains this site does not process payments -->
-    <section aria-labelledby="enquiry-heading">
-      <h1 id="enquiry-heading">Enquire to purchase</h1>
-      <p>KATT Cosmetics does not process payments through this website. Fill in the form below with the product(s) you're interested in, and our team will contact you via your preferred method to confirm availability, pricing, and how to complete your purchase.</p>
-    </section>
- 
-    <!-- HOW IT WORKS: 4-step explanation of the enquiry-based buying process -->
-    <section aria-labelledby="how-it-works-heading">
-      <h2 id="how-it-works-heading">How it works</h2>
-      <ol>
-        <li>Browse our <a href="product.html">product pages</a> and note down what you're interested in.</li>
-        <li>Submit the enquiry form below, or contact us directly via WhatsApp, email, or phone.</li>
-        <li>Our team confirms stock, pricing, and delivery or collection options with you.</li>
-        <li>Payment and delivery are arranged directly with our team — not through this website.</li>
-      </ol>
-    </section>
- 
-    <!-- PURCHASE ENQUIRY FORM: front-end only, action="#" for now -->
-    <section aria-labelledby="enquiry-form-heading">
-      <h2 id="enquiry-form-heading">Purchase enquiry form</h2>
-      <!-- The form below is front-end only. In a real-world scenario, the form would submit to a backend service or email handler. -->
-      <form id="enquiryForm">
-        <p>
-          <label for="pe-name">Full name</label><br />
-          <input type="text" id="pe-name" name="name" required />
-        </p>
-        <p>
-          <label for="pe-product">Product(s) of interest</label><br />
-          <input type="text" id="pe-product" name="product" placeholder="e.g. 24HR Matte Foundation, shade 3" required />
-        </p>
-        <p>
-          <label for="pe-quantity">Quantity</label><br />
-          <input type="number" id="pe-quantity" name="quantity" min="1" value="1" />
-        </p>
-        <p>
-          <label for="pe-contact-method">Preferred contact method</label><br />
-          <select id="pe-contact-method" name="contact_method">
-            <option value="whatsapp">WhatsApp</option>
-            <option value="email">Email</option>
-            <option value="phone">Phone</option>
-          </select>
-        </p>
-        <p>
-          <label for="pe-contact-details">Your email or phone number</label><br />
-          <input type="text" id="pe-contact-details" name="contact_details" required />
-        </p>
-        <p>
-          <label for="pe-message">Additional notes</label><br />
-          <textarea id="pe-message" name="message" rows="5"></textarea>
-        </p>
-        <p>
-          <button type="submit">Submit enquiry</button>
-        </p>
-      </form>
-      <p id="enquiryResponse" role="status"></p>
-    </section>
- 
-    <!-- ALTERNATIVE CONTACT: direct WhatsApp/email/Instagram links for anyone who skips the form -->
-    <section aria-labelledby="direct-contact-heading">
-      <h2 id="direct-contact-heading">Prefer to contact us directly?</h2>
-      <ul>
-        <li><a href="https://wa.me/27216660140">+27 21 666 0140</a></p>
-        <li><a href="mailto:hello@kattcosmetics.co.za">Email: hello@kattcosmetics.co.za</a></li>
-        <li><a href="https://www.instagram.com/kattcosmetics">kattcosmetics</a></li>
-      </ul>
-    </section>
- 
-  </main>
- 
-  <!-- ============ FOOTER: contact details + secondary navigation ============ -->
-  <footer>
-    <section aria-labelledby="footer-contact-heading">
-      <h2 id="footer-contact-heading">Contact KATT Cosmetics</h2>
-      <p>WhatsApp: <a href="https://wa.me/27216660140">+27 21 666 0140</a></p>
-      <p>Email: <a href="mailto:hello@kattcosmetics.co.za">hello@kattcosmetics.co.za</a></p>
-      <p>Instagram: <a href="https://www.instagram.com/kattcosmetics">kattcosmetics</a></p>
-    </section>
-    <nav aria-label="Footer navigation">
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="product.html">Products</a></li>
-        <li><a href="muatradeportal.html">MUA Trade Portal</a></li>
-        <li><a href="enquiry.html">Enquire to Purchase</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <p>&copy; 2026 KATT Cosmetics. All rights reserved.</p>
-  </footer>
- 
-  <!-- Wishlist functionality only — no purchasing/cart logic on this page -->
-  <script src="../js/script.js"></script>
-  <script>
-    // Handle the enquiry form submission
-    document.getElementById("enquiryForm").addEventListener("submit", function(event) {
-      event.preventDefault();
-
-      // Get form values
-      const name = document.getElementById("pe-name").value;
-      const product = document.getElementById("pe-product").value;
-      const quantity = document.getElementById("pe-quantity").value;
-      const contactMethod = document.getElementById("pe-contact-method").value;
-
-      // Display a confirmation message to the user
-      document.getElementById("enquiryResponse").textContent = "Thank you, " + name + "! Your enquiry for " + quantity + " of " + product + " has been received. We will contact you via " + contactMethod + " shortly.";
-
-      // Reset the form after submission
-      this.reset();
-    });
-    </script>
+                <li><a href="enquiry.html" aria-current="page">ENQUIRY</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content">
+        <!-- INTRO: explains this site does not process payments -->
+        <section aria-labelledby="enquiry-heading">
+            <h1 id="enquiry-heading">Enquire to purchase</h1>
+            <p>KATT Cosmetics does not process payments through this website. Fill in the form below with the product(s) you're interested in, and you'll see an instant estimate of price and availability. Our team will then contact you via your preferred method to confirm stock, pricing, and how to complete your purchase.</p>
+        </section>
+        <!-- HOW IT WORKS: 4-step explanation of the enquiry-based buying process -->
+        <section aria-labelledby="how-it-works-heading">
+            <h2 id="how-it-works-heading">How it works</h2>
+            <ol>
+                <li>Browse our <a href="product.html">product pages</a> and note down what you're interested in.</li>
+                <li>Submit the enquiry form below, or contact us directly via WhatsApp, email, or phone.</li>
+                <li>Our team confirms stock, pricing, and delivery or collection options with you.</li>
+                <li>Payment and delivery are arranged directly with our team, not through this website.</li>
+            </ol>
+        </section>
+        <!-- PURCHASE ENQUIRY FORM: validated and processed by forms.js. action="mailto:" is the no-JavaScript fallback. -->
+        <section aria-labelledby="enquiry-form-heading">
+            <h2 id="enquiry-form-heading">Purchase enquiry form</h2>
+            <form id="enquiryForm" action="mailto:hello@kattcosmetics.co.za" method="post" enctype="text/plain">
+                <p>
+                    <label for="pe-name">Full name</label>
+                    <input type="text" id="pe-name" name="name" autocomplete="name" maxlength="60" required>
+                </p>
+                <p>
+                    <label for="pe-product">Product(s) of interest</label>
+                    <input type="text" id="pe-product" name="product" maxlength="200" placeholder="e.g. 24HR Matte Foundation, shade 3" required>
+                </p>
+                <p>
+                    <label for="pe-quantity">Quantity (of each product)</label>
+                    <input type="number" id="pe-quantity" name="quantity" min="1" max="500" value="1" inputmode="numeric" required>
+                </p>
+                <p>
+                    <label for="pe-contact-method">Preferred contact method</label>
+                    <select id="pe-contact-method" name="contact_method" required>
+                        <option value="whatsapp">WhatsApp</option>
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="pe-contact-details">Your email or phone number</label>
+                    <input type="text" id="pe-contact-details" name="contact_details" autocomplete="off" required>
+                </p>
+                <p>
+                    <label for="pe-message">Additional notes (optional)</label>
+                    <textarea id="pe-message" name="message" rows="5" maxlength="500"></textarea>
+                </p>
+                <p>
+                    <button type="submit">Submit enquiry</button>
+                </p>
+            </form>
+        </section>
+        <!-- ENQUIRY FAQ: accordion -->
+        <section aria-labelledby="enquiry-faq-heading">
+            <h2 id="enquiry-faq-heading">Enquiry questions</h2>
+            <div data-accordion>
+                <details>
+                    <summary>How is my estimate calculated?</summary>
+                    <p>We match the products you typed to our range and multiply each price by your quantity. Items without a listed price show "Price on request" and are quoted by our team.</p>
+                </details>
+                <details>
+                    <summary>Is there a discount for larger orders?</summary>
+                    <p>Yes. Ordering 10 or more of an item shows a 10% trade discount in your estimate. Makeup artists can also <a href="muatradeportal.html">apply for a trade account</a>.</p>
+                </details>
+                <details>
+                    <summary>Is the estimate final?</summary>
+                    <p>No. It is an estimate only. Our team confirms stock, final pricing and delivery or collection with you before any payment.</p>
+                </details>
+            </div>
+        </section>
+        <!-- ALTERNATIVE CONTACT -->
+        <section aria-labelledby="direct-contact-heading">
+            <h2 id="direct-contact-heading">Prefer to contact us directly?</h2>
+            <ul>
+                <li><a href="https://wa.me/27216660140" rel="noopener noreferrer">+27 21 666 0140</a></li>
+                <li><a href="mailto:hello@kattcosmetics.co.za">Email: hello@kattcosmetics.co.za</a></li>
+                <li><a href="https://www.instagram.com/kattcosmetics/" rel="noopener noreferrer">@kattcosmetics</a></li>
+            </ul>
+        </section>
+    </main>
+    <!-- ============ FOOTER: contact details + secondary navigation, repeated on every page ============ -->
+    <footer>
+        <section aria-labelledby="footer-contact-heading">
+            <h2 id="footer-contact-heading">Contact KATT Cosmetics</h2>
+            <p>WhatsApp: <a href="https://wa.me/27216660140" rel="noopener noreferrer">+27 21 666 0140</a></p>
+            <p>Email: <a href="mailto:hello@kattcosmetics.co.za">hello@kattcosmetics.co.za</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/kattcosmetics/" rel="noopener noreferrer">@kattcosmetics</a></p>
+        </section>
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="product.html">PRODUCTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="muatradeportal.html">MUA TRADE PORTAL</a></li>
+                <li><a href="enquiry.html">ENQUIRY</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2026 KATT Cosmetics. All rights reserved.</p>
+    </footer>
+    <!-- Scripts are deferred so they never block page rendering -->
+    <script src="../assets/js/wishlist.js" defer></script>
+    <script src="../assets/js/enhancements.js" defer></script>
+    <script src="../assets/js/forms.js" defer></script>
 </body>
 </html>
