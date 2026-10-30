@@ -200,3 +200,25 @@
       let firstBad = null;
       els.forEach(f => { if (!setError(f.el, validateField(f)) && !firstBad) firstBad = f.el; });
       if (firstBad) { say('Please fix the highlighted fields and try again.', 'error'); firstBad.focus(); return; }
+
+      busy = true;
+      const btn = form.querySelector('button[type=submit]');
+      if (btn) btn.disabled = true;
+      try {
+        const data = {};
+        els.forEach(f => { data[f.id] = trim(f.el.value); });
+        const out = await cfg.onValid(form, data, result);
+        if (out) say(out.message, out.type);
+        if (out && out.reset) {
+          form.reset();
+          els.forEach(f => { f.el.classList.remove('is-valid', 'is-invalid'); errorSpan(f.el).textContent = ''; });
+        }
+        const showing = !result.hidden ? result : status;
+        showing.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      } catch (err) {
+        say('Sorry, something went wrong (' + err.message + '). Please try again, or contact us on WhatsApp or email.', 'error');
+      } finally {
+        busy = false; if (btn) btn.disabled = false;
+      }
+    });
+  });
