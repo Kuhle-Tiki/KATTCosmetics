@@ -21,4 +21,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [role="button"]:fo
     outline: 3px solid var(--gold); outline-offset: 2px;
 }
 .skip-link { position: absolute; left: -9999px; top: 0; background: var(--black); padding: 10px 16px; z-index: 100;  }
+.skip-link:focus { left: 8px; top: 8px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/*----------Form Validation States----------*/
 
