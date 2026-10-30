@@ -80,13 +80,12 @@ document.addEventListener("DOMContentLoaded", () => {
   renderWishlistSection();
 
   // Event delegation for wishlist buttons to handle clicks and update the wishlist state
-  document.addEv {
-    btn.addEventListener("click", () => {
-      const productId = btn.getAttribute("data-product-id");
-      toggleWishlistItem(productId);
-      renderWishlistButtons();
-      renderWishlistSection();
-    });
+  document.addEventListener("click", (event) => {
+   const btn = e.target.closest("wishlist-btn");
+   if (!btn) return;
+   toggleWishlistItem(btn.getAttribute("data-product-id"));
+   renderWishlistButtons();
+   renderWishlistSection();});
   });
 
   // Generic front-end form handling (no backend / no payment processing)
