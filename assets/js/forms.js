@@ -225,3 +225,11 @@
 /* ---------- enquiry.html: process the enquiry and respond ---------- */
   const money = n => 'R' + (Math.round(n * 100) / 100).toFixed(2).replace(/\.00$/, '');
   const STOCK = { 'in-stock': 'In stock', limited: 'Limited stock - enquire soon', 'out-of-stock': 'Out of stock - we will advise on restock' };
+
+    function cell(tr, text, tag) { const c = document.createElement(tag || 'td'); c.textContent = text; tr.appendChild(c); return c; }
+
+  async function handleEnquiry(form, d, result) {
+    const name = d['pe-name'];
+    const wanted = d['pe-product'].toLowerCase();
+    const qty = parseInt(d['pe-quantity'], 10);
+    const method = $('pe-contact-method').selectedOptions[0].text;
