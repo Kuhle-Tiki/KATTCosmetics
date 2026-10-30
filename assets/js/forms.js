@@ -317,3 +317,12 @@
     result.hidden = false;
     return { type: 'success', message: 'Your message is valid. Press "Open in my email app and send" to deliver it to ' + RECIPIENT + '.', reset: false };
   }
+
+   /* ---------- Pre-fill the enquiry form from product links (?product=...&shade=...) ---------- */
+  const prod = $('pe-product');
+  if (prod) {
+    const q = new URLSearchParams(location.search);
+    const p = q.get('product'), s = q.get('shade');
+    if (p && !prod.value) prod.value = (p + (s ? ', shade ' + s : '')).slice(0, 200);
+  }
+})();
