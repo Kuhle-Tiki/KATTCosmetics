@@ -41,3 +41,15 @@ Vanilla JavaScript (ES6): fetch (AJAX), DOM manipulation, IntersectionObserver, 
 Leaflet 1.9.4 + OpenStreetMap tiles for the store map (library self-hosted).
 Google Fonts: Poppins and Inter.
 Git/GitHub for version control; GitHub Pages for hosting.    
+
+Design system
+Token	Value	Use
+Black	
+#1A1A1A	Header, footer, hero
+Cream / dim	
+#F5F1EB / 
+#ECE5D8	Page and alternating section backgrounds
+Hot pink	
+#E6007A	Links, primary accent, results box
+Gold	
+#C9A227	Secondary accent, focus rings
