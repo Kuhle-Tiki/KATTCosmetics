@@ -18,3 +18,4 @@ About Us	pages/about.html	Brand history, mission, vision, values, target audienc
 Products	pages/product.html	Featured product with shade picker, plus a searchable, filterable, sortable catalogue
 MUA Trade Portal	pages/muatradeportal.html	Trade benefits, eligibility, validated application form
 Enquire to Purchase	pages/enquiry.html	Process explainer, validated enquiry form with instant price/availability estimate, FAQ accordion
+Contact	pages/contact.html	Contact details, validated message form that builds an email, FAQ accordion, interactive store map
