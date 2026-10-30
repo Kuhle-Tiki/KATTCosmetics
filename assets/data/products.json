@@ -206,6 +206,21 @@
   ]
     },
     {
-
+        "id": "matte-lipstick",
+         "name": "Matte Lipstick",
+        "category": "Lips",
+        "price": 50,
+        "stock": "in-stock",
+        "shades": "16 shades",
+        "description": "Long-lasting matte finish in a variety of shades.",
+        "image": "assets/images/matte-lipstick.webp",
+        "alt": "Matte Lipstick",
+        "keywords": [
+            "matte lipstick",
+            "lipstick"
+  ]
+    },
+    {
+        
     }
 ]
