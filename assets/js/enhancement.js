@@ -152,4 +152,11 @@
     const clear = document.getElementById('clear-filters');
     let products = [];
     const STOCK = { 'in-stock': 'In stock', limited: 'Limited stock', 'out-of-stock': 'Out of stock' };
-     
+
+    function card(p) {
+      const art = document.createElement('article'); art.className = 'product-card';
+      if (p.image) {
+        const fig = document.createElement('figure'); fig.setAttribute('data-lightbox', '');
+        const img = document.createElement('img');
+        img.src = BASE + p.image; img.alt = p.alt || p.name; img.width = 300; img.height = 300; img.loading = 'lazy';
+        fig.appendChild(img); art.appendChild(fig);
