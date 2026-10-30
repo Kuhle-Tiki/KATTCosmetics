@@ -184,3 +184,9 @@
     form.insertAdjacentElement('afterend', result);
     form.insertAdjacentElement('afterend', status);
     const say = (msg, type) => { status.textContent = msg; status.className = 'form-status ' + (type || ''); status.hidden = !msg; };
+
+    function validateField(f) {
+      const v = trim(f.el.value);
+      if (f.optional && v === '') return '';
+      return f.rule(v);
+    }
