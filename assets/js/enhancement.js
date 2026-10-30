@@ -198,3 +198,21 @@
       markLightbox();
       document.dispatchEvent(new CustomEvent('katt:catalogue-rendered'));
     }
+    fetch(BASE + 'assets/data/products.json')                       // AJAX: load products dynamically
+      .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(data => {
+        products = data;
+        [...new Set(products.map(p => p.category))].sort().forEach(n => cat && cat.add(new Option(n, n)));
+        const fromUrl = new URLSearchParams(location.search).get('category');
+        if (fromUrl && cat && [...cat.options].some(o => o.value === fromUrl)) cat.value = fromUrl;
+        render();
+      })
+      .catch(() => { if (count) count.textContent = 'Products could not be loaded. Please refresh, or contact us to hear about our range.'; });
+
+    let t;
+    if (search) search.addEventListener('input', () => { clearTimeout(t); t = setTimeout(render, 150); });
+    if (cat) cat.addEventListener('change', render);
+    if (sort) sort.addEventListener('change', render);
+    if (clear) clear.addEventListener('click', () => { if (search) search.value = ''; if (cat) cat.value = 'all'; if (sort) sort.value = 'name'; render(); if (search) search.focus(); });
+  }
+})();
