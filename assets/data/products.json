@@ -287,14 +287,17 @@
         "name": "Blending Sponge",
         "category": "Tools",
         "price": null,
-  "stock": "in-stock",
-  "shades": "",
-  "description": "Soft, durable sponge for flawless foundation application.",
-  "image": "assets/images/blending-sponge.webp",
-  "alt": "Blending Sponge",
-  "keywords": [
-   "sponge",
-   "blending sponge"
+        "stock": "in-stock",
+        "shades": "",
+        "description": "Soft, durable sponge for flawless foundation application.",
+        "image": "assets/images/blending-sponge.webp",
+        "alt": "Blending Sponge",
+        "keywords": [
+            "sponge",
+            "blending sponge"
   ]
+    },
+    {
+        
     }
 ]
