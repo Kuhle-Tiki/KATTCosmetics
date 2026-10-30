@@ -24,4 +24,15 @@
         nav.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); toggle.focus();
       }
     });
+  }
+  
+/* ---------- 2. Scroll-reveal animation (CSS transition + IntersectionObserver) ---------- */
+  if (typeof window.IntersectionObserver === 'function' && !reduceMotion) {
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('visible'); io.unobserve(en.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('main > section').forEach((el, i) => {
+      if (i === 0) return;                         // first section is already on screen
+      el.classList.add('reveal'); io.observe(el);
+    });
   }  
