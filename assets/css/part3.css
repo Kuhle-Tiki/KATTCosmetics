@@ -17,4 +17,8 @@ Uses the colour tokens defined in style.css (:root).
     .js-enabled header nav.is-open {display: block; }
     header nav ul { flex-direction: column; }
 }
+a:focus-visible, button:focus-visible, summary:focus-visible, [role="button"]:focus-visible {
+    outline: 3px solid var(--gold); outline-offset: 2px;
+}
+.skip-link { position: absolute; left: -9999px; top: 0; background: var(--black); padding: 10px 16px; z-index: 100;  }
 
