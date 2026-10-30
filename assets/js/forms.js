@@ -278,3 +278,9 @@
       if (unpriced) line += ' (plus items priced on request)';
       t.textContent = line; result.appendChild(t);
     }
+    const note = document.createElement('p');
+    note.textContent = 'This is an estimate only. Our team will confirm stock, final pricing and delivery or collection with you via ' + method + '. No payment is taken on this website.';
+    result.appendChild(note);
+    result.hidden = false;
+    return { type: 'success', message: 'Your enquiry was validated and processed.', reset: false };
+  }
