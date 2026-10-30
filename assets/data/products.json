@@ -78,18 +78,34 @@
   ]
     },
     {
-     "id": "full-coverage-concealer",
-  "name": "Full Coverage Concealer",
-  "category": "Face",
-  "price": 100,
-  "stock": "in-stock",
-  "shades": "",
-  "description": "High-coverage concealer for correcting and brightening.",
-  "image": "",
-  "alt": "",
-  "keywords": [
-   "concealer"
+        "id": "full-coverage-concealer",
+        "name": "Full Coverage Concealer",
+        "category": "Face",
+        "price": 100,
+        "stock": "in-stock",
+        "shades": "",
+        "description": "High-coverage concealer for correcting and brightening.",
+        "image": "",
+        "alt": "",
+        "keywords": [
+            "concealer"
   ]   
+    },
+    {
+        "id": "blur-setting-powder",
+        "name": "Blur Setting Powder",
+        "category": "Face",
+        "price": 150,
+        "stock": "in-stock",
+        "shades": "",
+        "description": "A translucent powder that sets makeup with a soft-blur matte finish.",
+        "image": "",
+        "alt": "",
+        "keywords": [
+            "setting powder",
+            "powder",
+            "blur"
+  ]
     },
     {
         
