@@ -174,3 +174,13 @@
     hp.type = 'text'; hp.name = 'website'; hp.tabIndex = -1; hp.autocomplete = 'off';
     hp.className = 'hp-field'; hp.setAttribute('aria-hidden', 'true');
     form.appendChild(hp);
+
+    // status + result areas
+    const status = document.createElement('p');
+    status.className = 'form-status'; status.hidden = true;
+    status.setAttribute('role', 'status'); status.setAttribute('aria-live', 'polite');
+    const result = document.createElement('div');
+    result.className = 'result-box'; result.hidden = true; result.id = formId + '-result';
+    form.insertAdjacentElement('afterend', result);
+    form.insertAdjacentElement('afterend', status);
+    const say = (msg, type) => { status.textContent = msg; status.className = 'form-status ' + (type || ''); status.hidden = !msg; };
