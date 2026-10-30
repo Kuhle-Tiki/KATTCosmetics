@@ -97,3 +97,9 @@ URLs: short and descriptive (/pages/product.html, /pages/contact.html).
 Internal linking: header and footer navigation, category links with ?category=, product-to-enquiry links, About ↔ Trade Portal ↔ Contact links.
 Mobile-friendliness: viewport meta tag, responsive layout, touch-sized controls.
 Extras: canonical link, Open Graph tags, Store structured data (JSON-LD) on the home page, a skip link and visible focus styles.
+
+Off-page 
+
+Backlinks: link to the site from the @kattcosmetics Instagram profile and relevant MUA/beauty directories.
+Social media: promote products and the website on Instagram.
+Local SEO: consistent name, phone number and email on every page, and a Google Business Profile listing for the Cape Town, Johannesburg and Durban locations.
