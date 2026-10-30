@@ -114,3 +114,20 @@ Security: Content-Security-Policy meta tag (scripts and connections limited to t
 4. Forms and validation (assets/js/forms.js)
 
 All four forms (enquiry, contact, newsletter, trade application) use HTML5 attributes (required, type, min, max, maxlength, autocomplete) plus JavaScript validation. Messages appear beside each field (role="alert", aria-invalid, aria-describedby). Fields validate on blur, on input after an error, and on submit; the first invalid field receives focus.
+
+Field	            Rule
+Name	            Required; 2–60 characters; letters, spaces, hyphens, apostrophes
+Email	            Required; name@domain.tld pattern
+Phone	            South African format: 0 or +27 plus 9 digits (spaces/dashes ignored)
+Contact             Must match the chosen method: email for Email; SA number for Phone/WhatsApp
+details 
+(enquiry)	
+Quantity	        Whole number 1–500
+Product(s)	        Required; 3–200 characters
+Message type	    A real option must be selected
+Message     	    10–1000 characters, live counter
+Notes /             Optional, with maximum lengths
+description / 
+business	
+Portfolio link	    Optional; must be a valid http(s) URL
+
