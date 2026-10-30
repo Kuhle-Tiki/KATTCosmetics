@@ -239,3 +239,9 @@
     // prefer the most specific match when several share a keyword (e.g. "matte lipstick" vs "lipstick")
     const exact = matches.filter(p => wanted.includes(p.name.toLowerCase()));
     const list = exact.length ? exact : matches.slice(0, 5);
+
+    await ajaxSubmit({ form: 'enquiry', ...d });
+
+    const h = document.createElement('h3');
+    h.textContent = 'Thank you, ' + name.split(' ')[0] + '! Here is your enquiry summary';
+    result.appendChild(h);
