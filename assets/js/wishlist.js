@@ -88,6 +88,9 @@ document.addEventListener("DOMContentLoaded", () => {
    renderWishlistSection();});
   });
 
+  // Re-sync buttons after the catalogue renders them
+  document.addEventListener("katt:catalogue-rendered", renderWiahliatButtons);
+  
   // Generic front-end form handling (no backend / no payment processing)
   document.querySelectorAll("form").forEach((form) => {
     form.addEventListener("submit", (e) => {
