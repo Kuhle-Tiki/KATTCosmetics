@@ -3,18 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us KATT COSmetics</title>
-    <meta name="description" content="About KATT Cosmetics - our story, our mission, and our values"/>
+    <title>About KATT Cosmetics | Cruelty-Free Professional Makeup</title>
+    <meta name="description" content="Learn the story, mission and values behind KATT Cosmetics: cruelty-free professional makeup made by working makeup artists for everyone.">
+    <meta name="robots" content="index, follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://tile.openstreetmap.org; connect-src 'self' https://formspree.io; object-src 'none'; base-uri 'self'">
+    <link rel="canonical" href="https://kuhle-tiki.github.io/KATTCosmetics/pages/about.html">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231a1a1a'/%3E%3Ctext x='50' y='72' font-size='64' text-anchor='middle' fill='%23e6007a' font-family='Arial' font-weight='700'%3EK%3C/text%3E%3C/svg%3E">
+    <!-- Open Graph tags: control how the page looks when shared on social media -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="KATT Cosmetics">
+    <meta property="og:title" content="About KATT Cosmetics | Cruelty-Free Professional Makeup">
+    <meta property="og:description" content="Learn the story, mission and values behind KATT Cosmetics: cruelty-free professional makeup made by working makeup artists for everyone.">
+    <meta property="og:url" content="https://kuhle-tiki.github.io/KATTCosmetics/pages/about.html">
+    <meta property="og:image" content="https://kuhle-tiki.github.io/KATTCosmetics/assets/images/matte-foundation.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/part3.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <!-- ============ HEADER: site logo + primary navigation ============ -->
     <header>
         <a href="../index.html">KATT Cosmetics</a>
-        <!-- Hamburger button: hidden on desktop, shown below the 768px breakpoint (see CSS) -->
-        <button type="button" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">☰</button>
+        <!-- Hamburger button: hidden on desktop, shown below 700px (see part3.css), toggled by enhancements.js -->
+        <button type="button" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">&#9776;</button>
         <nav aria-label="Primary navigation" id="primary-nav">
             <ul>
                 <li><a href="../index.html">HOME</a></li>
@@ -26,103 +41,87 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="main-content">
         <!-- INTRO: short one-line brand statement -->
         <section aria-labelledby="about-heading">
-            <h1 if="about-heading">About KATT Cosmetics</h1>
+            <h1 id="about-heading">About KATT Cosmetics</h1>
             <p>Made by makeup artists who wanted better options.</p>
         </section>
         <!-- HISTORY: founding story, 2021 -> today -->
         <section aria-labelledby="history-heading">
-            <h2 if="history-heding">Our History</h2>
-            <p>KATT Cosmetics was founded in 2021 by a team of working makeup artistes tired by chooseing between salon quality pigment and drugstore pricing. it started with a single hero product - a 24-shade liquid foundation rage - before growing through word-of-mouth freelance MUAs into full range of face, eye and lip products.</p>
-                <p>
-                    Today the brand operates through pop-up counters, select retail partners and this website - showcases for our full range , with all purchases made directy thrugh our team via WhatsApp, email and instagram.
-                </p>
+            <h2 id="history-heading">Our History</h2>
+            <p>KATT Cosmetics was founded in 2021 by a team of working makeup artists tired of choosing between salon-quality pigment and drugstore pricing. It started with a single hero product, a 24-shade liquid foundation range, before growing through word-of-mouth among freelance MUAs into a full range of face, eye and lip products.</p>
+            <p>Today the brand operates through pop-up counters, select retail partners and this website, which showcases our full range. All purchases are made directly through our team via WhatsApp, email and Instagram. See where to find us on our <a href="contact.html#stores">store locations</a> map.</p>
         </section>
         <!-- MISSION -->
         <section aria-labelledby="mission-heading">
-            <h2 if="mission-heading">Our Mission</h2>
+            <h2 id="mission-heading">Our Mission</h2>
             <p>We believe that makeup should be accessible to everyone, regardless of their skin tone or budget. Our mission is to provide high-quality, affordable cosmetics that empower individuals to express themselves and feel confident in their own skin.</p>
         </section>
         <!-- VISION -->
         <section aria-labelledby="vision-heading">
-            <h2 if="vision-heading">Our Vision</h2>
-            <p>Our vision is to become a leading cosmetics brand that is recognized for its commitment to inclusivity, sustainability, and innovation. We aim to create products that not only enhance beauty but also promote self-expression and creativity.</p>
+            <h2 id="vision-heading">Our Vision</h2>
+            <p>Our vision is to become a leading cosmetics brand that is recognised for its commitment to inclusivity, sustainability, and innovation. We aim to create products that not only enhance beauty but also promote self-expression and creativity.</p>
         </section>
-        <!-- VALUES (long list) -->
+        <!-- VALUES -->
         <section aria-labelledby="values-heading">
-            <h2 if="values-heading">Our Values</h2>
+            <h2 id="values-heading">Our Values</h2>
             <ul>
                 <li>Inclusivity: We celebrate diversity and strive to create products that cater to all skin tones and types.</li>
                 <li>Sustainability: We are committed to reducing our environmental impact through eco-friendly packaging and responsible sourcing.</li>
                 <li>Innovation: We continuously research and develop new products to meet the evolving needs of our customers.</li>
-                <li>Quality: We prioritize the quality of our products, ensuring they are safe, effective, and enjoyable to use.</li>
+                <li>Quality: We prioritise the quality of our products, ensuring they are safe, effective, and enjoyable to use.</li>
             </ul>
         </section>
-        <section aria-labelledby="audience-heading">
-            <h2 id="values-heading">Our values</h2>
+        <section aria-labelledby="promise-heading">
+            <h2 id="promise-heading">Our promise</h2>
             <ul>
-                <li>
-                    Cruelty-free formulas, always.
-                </li>
-                <li>
-                    A shade range built for everyone.
-                </li>
-                <li>
-                    Honest, professional-friendly pricing.
-                </li>
+                <li>Cruelty-free formulas, always.</li>
+                <li>A shade range built for everyone.</li>
+                <li>Honest, professional-friendly pricing.</li>
             </ul>
-            
         </section>
         <!-- TARGET AUDIENCE: two customer groups this site is designed for -->
-        <section aria-labelledby="=audience-heading">
+        <section aria-labelledby="audience-heading">
             <h2 id="audience-heading">Who we're for</h2>
             <ol>
                 <li>
                     <article>
                         <h3>Everyday beauty lovers</h3>
-                        <p>Aged 18-50, budget-conscious but quality-focused, active on social media, always up for a new turtorial or trend.</p>
+                        <p>Aged 18-50, budget-conscious but quality-focused, active on social media, always up for a new tutorial or trend. <a href="product.html">Browse our makeup range</a>.</p>
                     </article>
                 </li>
                 <li>
                     <article>
-                        <h3>Freelance and salaried makeup artist</h3>
-                        <p>
-                            Professionals who need bulk-buy options, full professional shade range, and formulas durable enoigh for client work. <a href="muatradeportal.html">MUA TRADE PORTAL</a>
-                        </p>
+                        <h3>Freelance and salaried makeup artists</h3>
+                        <p>Professionals who need bulk-buy options, a full professional shade range, and formulas durable enough for client work. <a href="muatradeportal.html">MUA Trade Portal</a></p>
                     </article>
                 </li>
             </ol>
         </section>
-        <main>
-            <!-- ============ FOOTER: contact details + secondary navigation ============ -->
-            <footer>
-                <section aria-labelledby="footer-contact-heading">
-                    <h2 id="footer-contact-heading">Contact KATT Cosmetics</h2>
-                    <p>
-                        WhatsApp: <a href="https://wa.me/27216660140">+27 21 666 0140</a>
-                    </p>
-                    <p>Email: <a href="mailto:hello@kattcosmetics.co.za">hello@kattcosmetics.co.za</a>
-                    </p>
-                    <p>Instagram: <a href="https://www.instagram.com/kattcosmetics/">@kattcosmetics</a></p>
-                </section>
-                <nav aria-labelledby="Footer navigation">
-                    <ul>
-                        <li><a href="../index.html">HOME</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
-                        <li><a href="product.html">PRODUCTS</a></li>
-                        <li><a href="muatradeportal.html">MUA TRADE PORTAL</a></li>
-                        <li><a href="enquiry.html">ENQUIRE TO PURCHASE</a></li>
-                        <li><a href="contact.html">CONTACT</a></li>
-                
-                    </ul>
-                </nav>
-                <p>&copy; 2026 KATT Cosmetics. ALL </p>
-            </footer>
-            <!-- Wishlist functionality only — no purchasing/cart logic on this page -->
-            <script src="../js/script.js"></script>
-        </main>
-        
+    </main>
+    <!-- ============ FOOTER: contact details + secondary navigation, repeated on every page ============ -->
+    <footer>
+        <section aria-labelledby="footer-contact-heading">
+            <h2 id="footer-contact-heading">Contact KATT Cosmetics</h2>
+            <p>WhatsApp: <a href="https://wa.me/27216660140" rel="noopener noreferrer">+27 21 666 0140</a></p>
+            <p>Email: <a href="mailto:hello@kattcosmetics.co.za">hello@kattcosmetics.co.za</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/kattcosmetics/" rel="noopener noreferrer">@kattcosmetics</a></p>
+        </section>
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="product.html">PRODUCTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="muatradeportal.html">MUA TRADE PORTAL</a></li>
+                <li><a href="enquiry.html">ENQUIRY</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2026 KATT Cosmetics. All rights reserved.</p>
+    </footer>
+    <!-- Scripts are deferred so they never block page rendering -->
+    <script src="../assets/js/wishlist.js" defer></script>
+    <script src="../assets/js/enhancements.js" defer></script>
 </body>
 </html>

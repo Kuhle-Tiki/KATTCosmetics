@@ -192,47 +192,47 @@ Changes were committed regularly with descriptive messages. The site is deployed
 ## References
 *(Harvard style, IIE format)*
 
-GitHub, n.d. *GitHub Pages documentation.* [online] Available at: <https://docs.github.com/en/pages> [Accessed 30 October 2026].
+GitHub, n.d. *GitHub Pages documentation.* [online] Available at: <https://docs.github.com/en/pages> [Accessed 20 October 2026].
 
-Google Search Central, n.d. *Build and submit a sitemap.* [online] Available at: <https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap> [Accessed 30 October 2026].
+Google Search Central, n.d. *Build and submit a sitemap.* [online] Available at: <https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap> [Accessed 20 October 2026].
 
-Google Search Central, n.d. *Introduction to robots.txt.* [online] Available at: <https://developers.google.com/search/docs/crawling-indexing/robots/intro> [Accessed 30 October 2026].
+Google Search Central, n.d. *Introduction to robots.txt.* [online] Available at: <https://developers.google.com/search/docs/crawling-indexing/robots/intro> [Accessed 20 October 2026].
 
-Google Search Central, n.d. *Influencing your title links in search results.* [online] Available at: <https://developers.google.com/search/docs/appearance/title-link> [Accessed 30 October 2026].
+Google Search Central, n.d. *Influencing your title links in search results.* [online] Available at: <https://developers.google.com/search/docs/appearance/title-link> [Accessed 20 October 2026].
 
-Google Search Central, n.d. *Control your snippets in search results.* [online] Available at: <https://developers.google.com/search/docs/appearance/snippet> [Accessed 30 October 2026].
+Google Search Central, n.d. *Control your snippets in search results.* [online] Available at: <https://developers.google.com/search/docs/appearance/snippet> [Accessed 18 October 2026].
 
-Leaflet, n.d. *Leaflet quick start guide.* [online] Available at: <https://leafletjs.com/examples/quick-start/> [Accessed 30 October 2026].
+Leaflet, n.d. *Leaflet quick start guide.* [online] Available at: <https://leafletjs.com/examples/quick-start/> [Accessed 18 October 2026].
 
-MDN Web Docs, n.d. *Client-side form validation.* [online] Available at: <https://developer.mozilla.org/docs/Learn_web_development/Extensions/Forms/Form_validation> [Accessed 30 October 2026].
+MDN Web Docs, n.d. *Client-side form validation.* [online] Available at: <https://developer.mozilla.org/docs/Learn_web_development/Extensions/Forms/Form_validation> [Accessed 18 October 2026].
 
-MDN Web Docs, n.d. *Using the Fetch API.* [online] Available at: <https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch> [Accessed 30 October 2026].
+MDN Web Docs, n.d. *Using the Fetch API.* [online] Available at: <https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch> [Accessed 20 October 2026].
 
-MDN Web Docs, n.d. *Intersection Observer API.* [online] Available at: <https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API> [Accessed 30 October 2026].
+MDN Web Docs, n.d. *Intersection Observer API.* [online] Available at: <https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API> [Accessed 20 October 2026].
 
-MDN Web Docs, n.d. *Content Security Policy (CSP).* [online] Available at: <https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP> [Accessed 30 October 2026].
+MDN Web Docs, n.d. *Content Security Policy (CSP).* [online] Available at: <https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP> [Accessed 20 October 2026].
 
-MDN Web Docs, n.d. *<details>: The Disclosure element.* [online] Available at: <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details> [Accessed 30 October 2026].
+MDN Web Docs, n.d. *<details>: The Disclosure element.* [online] Available at: <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details> [Accessed 20 October 2026].
 
-MDN Web Docs, n.d. *Web Storage API: Using the Web Storage API.* [online] Available at: <https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API> [Accessed 30 October 2026].
+MDN Web Docs, n.d. *Web Storage API: Using the Web Storage API.* [online] Available at: <https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API> [Accessed 20 October 2026].
 
-MDN Web Docs, n.d. *CSS box model.* [online] Available at: <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_model/Introduction_to_the_CSS_box_model> [Accessed 2026].
+MDN Web Docs, n.d. *CSS box model.* [online] Available at: <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_model/Introduction_to_the_CSS_box_model> [Accessed 18 2026].
 
-MDN Web Docs, n.d. *Using media queries.* [online] Available at: <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries> [Accessed 2026].
+MDN Web Docs, n.d. *Using media queries.* [online] Available at: <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries> [Accessed 18 2026].
 
-OpenStreetMap Foundation, n.d. *Copyright and license.* [online] Available at: <https://www.openstreetmap.org/copyright> [Accessed 30 October 2026].
+OpenStreetMap Foundation, n.d. *Copyright and license.* [online] Available at: <https://www.openstreetmap.org/copyright> [Accessed 20 October 2026].
 
-Schema.org, n.d. *Store.* [online] Available at: <https://schema.org/Store> [Accessed 30 October 2026].
+Schema.org, n.d. *Store.* [online] Available at: <https://schema.org/Store> [Accessed 20 October 2026].
 
-Sitemaps.org, 2008. *Sitemaps XML format.* [online] Available at: <https://www.sitemaps.org/protocol.html> [Accessed 30 October 2026].
+Sitemaps.org, 2008. *Sitemaps XML format.* [online] Available at: <https://www.sitemaps.org/protocol.html> [Accessed 20 October 2026].
 
-W3C Web Accessibility Initiative, n.d. *ARIA Authoring Practices Guide: Disclosure (Navigation Menu) Pattern.* [online] Available at: <https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/> [Accessed 2026].
+W3C Web Accessibility Initiative, n.d. *ARIA Authoring Practices Guide: Disclosure (Navigation Menu) Pattern.* [online] Available at: <https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/> [Accessed 18 2026].
 
-Google Fonts, n.d. *Poppins.* [online] Available at: <https://fonts.google.com/specimen/Poppins> [Accessed 2026].
+Google Fonts, n.d. *Poppins.* [online] Available at: <https://fonts.google.com/specimen/Poppins> [Accessed 20 2026].
 
-Google Fonts, n.d. *Inter.* [online] Available at: <https://fonts.google.com/specimen/Inter> [Accessed 2026].
+Google Fonts, n.d. *Inter.* [online] Available at: <https://fonts.google.com/specimen/Inter> [Accessed 18 2026].
 
-NYX Professional Makeup, n.d. *NYX Professional Makeup — Cruelty-Free & Affordable Makeup.* [online] Available at: <https://www.nyxcosmetics.com> [Accessed 2026]. (Brand-positioning inspiration for this fictional coursework brand. Product photographs are used for educational purposes only.)
+NYX Professional Makeup, n.d. *NYX Professional Makeup — Cruelty-Free & Affordable Makeup.* [online] Available at: <https://www.nyxcosmetics.com> [Accessed 18 2026]. (Brand-positioning inspiration for this fictional coursework brand. Product photographs are used for educational purposes only.)
 
 ---
 
