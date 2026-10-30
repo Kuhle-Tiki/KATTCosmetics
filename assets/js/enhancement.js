@@ -160,3 +160,41 @@
         const img = document.createElement('img');
         img.src = BASE + p.image; img.alt = p.alt || p.name; img.width = 300; img.height = 300; img.loading = 'lazy';
         fig.appendChild(img); art.appendChild(fig);
+      }
+      const tag = document.createElement('p'); tag.className = 'tag'; tag.textContent = p.category;
+      const h = document.createElement('h3'); h.textContent = p.name;
+      const d = document.createElement('p'); d.textContent = p.description + (p.shades ? ' (' + p.shades + ')' : '');
+      const price = document.createElement('p'); price.className = 'price'; price.textContent = p.price != null ? 'R' + p.price : 'Price on request';
+      const badge = document.createElement('span'); badge.className = 'badge ' + p.stock; badge.textContent = STOCK[p.stock] || '';
+      const actions = document.createElement('p'); actions.className = 'card-actions';
+      const a = document.createElement('a'); a.href = 'enquiry.html?product=' + encodeURIComponent(p.name); a.textContent = 'Enquire about this product';
+      const w = document.createElement('button'); w.type = 'button'; w.className = 'wishlist-btn';
+      w.dataset.productId = p.id; w.setAttribute('aria-pressed', 'false'); w.textContent = 'Add to Wishlist';
+      actions.append(a, w);
+      art.append(tag, h, d, price, badge, actions);
+      return art;
+    }  
+        function render() {
+      const q = (search ? search.value : '').trim().toLowerCase();
+      const c = cat ? cat.value : 'all';
+      const s = sort ? sort.value : 'name';
+      const out = products.filter(p =>
+        (c === 'all' || p.category === c) &&
+        (!q || [p.name, p.category, p.description].concat(p.keywords || []).join(' ').toLowerCase().includes(q)));
+      out.sort((a, b) => {
+        if (s === 'price-asc' || s === 'price-desc') {
+          const an = a.price == null, bn = b.price == null;          // "price on request" always last
+          if (an || bn) return an && bn ? a.name.localeCompare(b.name) : an ? 1 : -1;
+          return s === 'price-asc' ? a.price - b.price : b.price - a.price;
+        }
+        return a.name.localeCompare(b.name);
+      });
+      grid.replaceChildren(...out.map(card));
+      if (!out.length) {
+        const m = document.createElement('p'); m.textContent = 'No products match your search. Try another word or clear the filters.';
+        grid.appendChild(m);
+      }
+      if (count) count.textContent = out.length + (out.length === 1 ? ' product found' : ' products found');
+      markLightbox();
+      document.dispatchEvent(new CustomEvent('katt:catalogue-rendered'));
+    }
