@@ -55,3 +55,24 @@ Gold
 #C9A227	Secondary accent, focus rings
 
 Breakpoints: single column below 700px with a hamburger menu; grids and inline navigation above.
+
+Part 3 features
+
+1. Interactive elements (assets/js/enhancements.js, assets/css/part3.css)
+
+Feature	                Where	                    How it works
+
+Accordion	            Contact FAQ,                Native <details> enhanced 
+                        Enquiry FAQ	                opening one item closes the others; animated; keyboard accessible by default.
+
+Lightbox (modal)	    Product and 
+                        featured images	            Click or press Enter on an image to open a dialog with prev/next, 
+                                                    caption, Esc to close, arrow keys and focus trapping.
+
+Interactive map	        Contact page	            Leaflet map with a marker for each store/pop-up read from 
+                                                    the table's data-lat/data-lng; "View map" links fly to a store and open its popup.
+
+Animations	            All pages	                Sections fade and slide in on scroll 
+(CSS transitions + IntersectionObserver); cards lift on hover; accordion panels fade open. All disabled for prefers-reduced-motion.
+Mobile menu	All pages	The ☰ button toggles the navigation (aria-expanded), Esc closes it.
+DOM manipulation	Throughout	Cards, result tables, error messages and the lightbox are built with createElement/textContent.
