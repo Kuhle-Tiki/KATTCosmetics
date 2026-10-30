@@ -126,3 +126,15 @@
     const upd = () => { c.textContent = el.value.length + ' / ' + max; };
     el.addEventListener('input', upd); upd();
   }
+
+  /* ---------- AJAX (fetch) ---------- */
+  async function ajaxSubmit(payload) {
+    if (!AJAX_ENDPOINT) return { skipped: true };
+    const res = await fetch(AJAX_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify(payload)
+    });
+    if (!res.ok) throw new Error('server status ' + res.status);
+    return res.json().catch(() => ({}));
+  }
