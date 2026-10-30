@@ -221,6 +221,21 @@
   ]
     },
     {
+        "id": "matte-liquid-lipstick",
+        "name": "Matte Liquid Lipstick",
+        "category": "Lips",
+        "price": null,
+        "stock": "in-stock",
+        "shades": "",
+        "description": "Smooth, creamy texture with a long-lasting matte finish.",
+        "image": "assets/images/matte-liquid-lipstick.webp",
+        "alt": "Matte Liquid Lipstick",
+        "keywords": [
+            "liquid lipstick",
+            "lipstick"
+  ]
+    },
+    {
         
     }
 ]
