@@ -25,4 +25,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [role="button"]:fo
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 /*----------Form Validation States----------*/
+.field-error { display: block; color: #b00020; font-size: 0.85rem; font-weight: 500; margin-top: 6px; min-height: 1em; }
+.is-invalid { border-color: #b00020 !important; background: #fff5f6 !important; }
+.is-valid { border-color: #1f7a4d !important; }
+.char-count { display: block; text-align: right; font-size: 0.78rem; color: #6b655c; }
+.hp-field { position: absolute !important; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.form-status { max-width: 640px; margin: 16px 0; padding: 12px 16px; border-radius: 10px; border: 1.5px solid currentColor; font-weight: 500; }
+.form-status.success { color: #1f7a4d; background: #eaf6ef; }
+.form-status.error { color: #b00020; background: #fff5f6; }
+form button[disabled] { opacity: 0.6; cursor: wait; }
+
 
