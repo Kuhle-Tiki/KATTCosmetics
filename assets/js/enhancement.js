@@ -142,4 +142,14 @@
     mapEl.textContent = 'The interactive map could not load. Use the "View map" links in the table below.';
   }
   
-  
+ /* ---------- 6. Dynamic product catalogue: load, search, filter, sort ---------- */
+  const grid = document.getElementById('product-grid');
+  if (grid) {
+    const search = document.getElementById('product-search');
+    const cat = document.getElementById('category-filter');
+    const sort = document.getElementById('sort-products');
+    const count = document.getElementById('results-count');
+    const clear = document.getElementById('clear-filters');
+    let products = [];
+    const STOCK = { 'in-stock': 'In stock', limited: 'Limited stock', 'out-of-stock': 'Out of stock' };
+     
