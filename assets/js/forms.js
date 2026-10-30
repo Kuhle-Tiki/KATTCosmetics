@@ -233,3 +233,9 @@
     const wanted = d['pe-product'].toLowerCase();
     const qty = parseInt(d['pe-quantity'], 10);
     const method = $('pe-contact-method').selectedOptions[0].text;
+
+    const items = await loadCatalogue();
+    const matches = items.filter(p => [p.name].concat(p.keywords || []).some(k => wanted.includes(k.toLowerCase())));
+    // prefer the most specific match when several share a keyword (e.g. "matte lipstick" vs "lipstick")
+    const exact = matches.filter(p => wanted.includes(p.name.toLowerCase()));
+    const list = exact.length ? exact : matches.slice(0, 5);
