@@ -75,4 +75,39 @@
         if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
         else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
       }
-    });  
+    });
+    }
+  function show(i) {
+    const img = list[i]; current = i;
+    lbImg.src = img.currentSrc || img.src; lbImg.alt = img.alt; lbCap.textContent = img.alt;
+    overlay.querySelector('.lb-prev').hidden = overlay.querySelector('.lb-next').hidden = list.length < 2;
+  }
+  function step(d) { show((current + d + list.length) % list.length); }
+  function openLb(img) {
+    if (!overlay) buildLightbox();
+    list = [...document.querySelectorAll(IMG_SEL)];
+    lastFocus = document.activeElement;
+    show(list.indexOf(img)); overlay.hidden = false;
+    overlay.querySelector('.lb-close').focus();
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLb() {
+    overlay.hidden = true; document.body.style.overflow = '';
+    if (lastFocus) lastFocus.focus();
+  }
+  document.addEventListener('click', e => {
+    const img = e.target.closest ? e.target.closest(IMG_SEL) : null;
+    if (img) openLb(img);
+  });
+  document.addEventListener('keydown', e => {
+    if ((e.key === 'Enter' || e.key === ' ') && e.target.matches && e.target.matches(IMG_SEL)) { e.preventDefault(); openLb(e.target); }
+  });
+  function markLightbox() {
+    document.querySelectorAll(IMG_SEL).forEach(img => {
+      img.tabIndex = 0; img.setAttribute('role', 'button');
+      img.setAttribute('aria-label', 'View larger image: ' + (img.alt || 'product'));
+    });
+  }
+  markLightbox();
+
+  
