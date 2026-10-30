@@ -222,3 +222,6 @@
       }
     });
   });
+/* ---------- enquiry.html: process the enquiry and respond ---------- */
+  const money = n => 'R' + (Math.round(n * 100) / 100).toFixed(2).replace(/\.00$/, '');
+  const STOCK = { 'in-stock': 'In stock', limited: 'Limited stock - enquire soon', 'out-of-stock': 'Out of stock - we will advise on restock' };
