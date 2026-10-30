@@ -136,3 +136,7 @@ enquiry.html (purpose: ask about products, cost and availability). After validat
 contact.html (purpose: send a general message). After validation the form compiles name, email, optional phone, message type and message into an email. A preview is shown with an Open in my email app and send button (a mailto: link to hello@kattcosmetics.co.za) and a Copy message button.
 
 Submission and AJAX. Each form has an action (a mailto: fallback when JavaScript is unavailable). With JavaScript, submission is intercepted and handled without a page reload, product data is fetched with fetch(), and setting AJAX_ENDPOINT in forms.js (e.g. a Formspree URL) also posts the form data as JSON.
+
+5. Version control and deployment
+
+Changes were committed regularly with descriptive messages. The site is deployed with GitHub Pages at the live link above.
