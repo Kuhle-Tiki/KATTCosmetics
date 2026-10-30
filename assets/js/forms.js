@@ -168,3 +168,9 @@
       const t = els.find(f => f.id === target);
       if (t && $(src)) $(src).addEventListener('change', () => { if (trim(t.el.value)) setError(t.el, validateField(t)); });
     });
+
+    // honeypot against bots (hidden from people)
+    const hp = document.createElement('input');
+    hp.type = 'text'; hp.name = 'website'; hp.tabIndex = -1; hp.autocomplete = 'off';
+    hp.className = 'hp-field'; hp.setAttribute('aria-hidden', 'true');
+    form.appendChild(hp);
