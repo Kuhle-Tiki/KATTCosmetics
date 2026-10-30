@@ -83,4 +83,13 @@ DOM manipulation	    Throughout	                Cards, result tables, error mess
 
  2. Dynamic content, search, filter and sort (Products page)
 
-assets/data/products.json holds 19 products. enhancements.js loads it with fetch() and renders the cards. Visitors can search (debounced, matches name/category/description/keywords), filter by category (also via links such as product.html?category=Lips from the home page), and sort by name or price. Cards include a wishlist button and an "Enquire" link that pre-fills the enquiry form.                                                   
+assets/data/products.json holds 19 products. enhancements.js loads it with fetch() and renders the cards. Visitors can search (debounced, matches name/category/description/keywords), filter by category (also via links such as product.html?category=Lips from the home page), and sort by name or price. Cards include a wishlist button and an "Enquire" link that pre-fills the enquiry form.  
+
+3. SEO
+
+On-page
+
+Keywords: terms such as "professional makeup", "MUA trade pricing", "matte foundation", "cruelty-free" and "South Africa" appear naturally in titles, headings and body copy.
+Title tags and meta descriptions: unique on every page (about 50–60 and 120–160 characters).
+Headings: exactly one h1 per page, then h2/h3 in order.
+Images: descriptive lowercase file names (e.g. matte-foundation.webp), meaningful alt text, width/height, loading="lazy".
