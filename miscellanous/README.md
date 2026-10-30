@@ -53,3 +53,5 @@ Hot pink
 #E6007A	Links, primary accent, results box
 Gold	
 #C9A227	Secondary accent, focus rings
+
+Breakpoints: single column below 700px with a hamburger menu; grids and inline navigation above.
