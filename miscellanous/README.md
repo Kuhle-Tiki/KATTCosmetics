@@ -93,3 +93,7 @@ Keywords: terms such as "professional makeup", "MUA trade pricing", "matte found
 Title tags and meta descriptions: unique on every page (about 50–60 and 120–160 characters).
 Headings: exactly one h1 per page, then h2/h3 in order.
 Images: descriptive lowercase file names (e.g. matte-foundation.webp), meaningful alt text, width/height, loading="lazy".
+URLs: short and descriptive (/pages/product.html, /pages/contact.html).
+Internal linking: header and footer navigation, category links with ?category=, product-to-enquiry links, About ↔ Trade Portal ↔ Contact links.
+Mobile-friendliness: viewport meta tag, responsive layout, touch-sized controls.
+Extras: canonical link, Open Graph tags, Store structured data (JSON-LD) on the home page, a skip link and visible focus styles.
