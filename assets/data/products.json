@@ -1,0 +1,22 @@
+[
+    {
+        "id": "foundation-24hr",
+        "name": "24HR Matte Foundation",
+        "category": "face",
+        "price": 150,
+        "stock": "in-stock",
+        "shades": "24 shades",
+        "description": "Full-coverage, long-wearing matte foundation built for studio lighting and everyday life.",
+        "image": "assests/images/matte-foundation.webp",
+        "alt": "24HR Matte Foundation bottle",
+        "keywords": [
+            "foundation",
+            "24hr",
+            "matte foundation"
+        ]
+
+    },
+    {
+        
+    }
+]
