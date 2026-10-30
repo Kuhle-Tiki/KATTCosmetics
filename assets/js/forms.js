@@ -299,4 +299,16 @@
     ].filter(l => l !== null).join('\n');
     const subject = 'KATT Cosmetics - ' + type;
     const href = 'mailto:' + RECIPIENT + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-      
+    
+    await ajaxSubmit({ form: 'contact', ...d });
+
+    const h = document.createElement('h3'); h.textContent = 'Your email is ready to send';
+    const meta = document.createElement('p'); meta.textContent = 'To: ' + RECIPIENT + '  |  Subject: ' + subject;
+    const pre = document.createElement('pre'); pre.className = 'email-preview'; pre.textContent = body;
+    const actions = document.createElement('p'); actions.className = 'result-actions';
+    const send = document.createElement('a'); send.className = 'btn-link'; send.href = href; send.textContent = 'Open in my email app and send';
+    const copy = document.createElement('button'); copy.type = 'button'; copy.textContent = 'Copy message';
+    copy.addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(body); copy.textContent = 'Copied!'; }
+      catch { copy.textContent = 'Copy failed - select the text above'; }
+    });
