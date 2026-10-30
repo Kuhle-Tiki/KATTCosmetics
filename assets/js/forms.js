@@ -245,3 +245,8 @@
     const h = document.createElement('h3');
     h.textContent = 'Thank you, ' + name.split(' ')[0] + '! Here is your enquiry summary';
     result.appendChild(h);
+
+    if (!list.length) {
+      const p = document.createElement('p');
+      p.textContent = 'We could not match "' + d['pe-product'] + '" to a product in our range automatically. Our team will check availability and pricing and reply via ' + method + '.';
+      result.appendChild(p);
