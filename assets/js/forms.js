@@ -250,3 +250,31 @@
       const p = document.createElement('p');
       p.textContent = 'We could not match "' + d['pe-product'] + '" to a product in our range automatically. Our team will check availability and pricing and reply via ' + method + '.';
       result.appendChild(p);
+    } else {
+      const wrap = document.createElement('div'); wrap.className = 'table-scroll';
+      const table = document.createElement('table');
+      const cap = document.createElement('caption'); cap.textContent = 'Estimate for ' + qty + ' of each item'; table.appendChild(cap);
+      const thead = document.createElement('thead'); const hr = document.createElement('tr');
+      ['Product', 'Price each', 'Availability', 'Subtotal'].forEach(t => { const th = cell(hr, t, 'th'); th.scope = 'col'; });
+      thead.appendChild(hr); table.appendChild(thead);
+      const tb = document.createElement('tbody');
+      let total = 0, unpriced = false;
+      list.forEach(p => {
+        const tr = document.createElement('tr');
+        const sub = p.price != null ? p.price * qty : null;
+        if (sub != null) total += sub; else unpriced = true;
+        cell(tr, p.name); cell(tr, p.price != null ? money(p.price) : 'On request');
+        cell(tr, STOCK[p.stock] || 'We will confirm'); cell(tr, sub != null ? money(sub) : '-');
+        tb.appendChild(tr);
+      });
+      table.appendChild(tb); wrap.appendChild(table); result.appendChild(wrap);
+      
+      const t = document.createElement('p'); t.className = 'total';
+      let line = 'Estimated total: ' + money(total);
+      if (qty >= TRADE_QTY && total > 0) {
+        const disc = total * TRADE_DISCOUNT;
+        line += ' | trade discount (' + TRADE_DISCOUNT * 100 + '%): -' + money(disc) + ' | after discount: ' + money(total - disc);
+      }
+      if (unpriced) line += ' (plus items priced on request)';
+      t.textContent = line; result.appendChild(t);
+    }
