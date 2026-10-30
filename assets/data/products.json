@@ -175,6 +175,20 @@
   ] 
     },
     {
+         "id": "eye-mascara",
+        "name": "Eye Mascara",
+        "category": "Eyes",
+        "price": null,
+        "stock": "in-stock",
+        "shades": "",
+        "description": "Volumising and lengthening mascara for bold lashes.",
+        "image": "assets/images/eye-mascara.webp",
+        "alt": "Eye Mascara",
+        "keywords": [
+            "mascara"
+  ]
+    },
+    {
         
     }
 ]
