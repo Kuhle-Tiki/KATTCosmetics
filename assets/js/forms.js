@@ -98,3 +98,16 @@
       }
     }
   };
+
+/* ---------- Error display helpers ---------- */
+  function errorSpan(el) {
+    const id = el.id + '-error';
+    let s = $(id);
+    if (!s) {
+      s = document.createElement('span');
+      s.id = id; s.className = 'field-error'; s.setAttribute('role', 'alert');
+      const anchor = $(el.id + '-count') || el;
+      anchor.insertAdjacentElement('afterend', s);
+      el.setAttribute('aria-describedby', id);
+    }
+    return s;  
