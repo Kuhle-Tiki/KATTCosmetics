@@ -17,3 +17,4 @@ Home	index.html	Hero, how-to-buy, category links, featured products, newsletter 
 About Us	pages/about.html	Brand history, mission, vision, values, target audience
 Products	pages/product.html	Featured product with shade picker, plus a searchable, filterable, sortable catalogue
 MUA Trade Portal	pages/muatradeportal.html	Trade benefits, eligibility, validated application form
+Enquire to Purchase	pages/enquiry.html	Process explainer, validated enquiry form with instant price/availability estimate, FAQ accordion
