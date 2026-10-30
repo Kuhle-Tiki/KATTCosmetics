@@ -158,6 +158,23 @@
   ]
     },
     {
+        "id": "eye-palette",
+        "name": "Eye Palette",
+        "category": "Eyes",
+        "price": null,
+        "stock": "in-stock",
+        "shades": "",
+        "description": "A versatile palette with a range of shades for any look.",
+        "image": "assets/images/eye-palette.webp",
+        "alt": "Eye Shadow Palette",
+        "keywords": [
+            "eye palette",
+            "eye shadow",
+            "eyeshadow",
+            "palette"
+  ] 
+    },
+    {
         
     }
 ]
