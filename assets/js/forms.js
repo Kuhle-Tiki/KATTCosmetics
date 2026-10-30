@@ -312,3 +312,8 @@
       try { await navigator.clipboard.writeText(body); copy.textContent = 'Copied!'; }
       catch { copy.textContent = 'Copy failed - select the text above'; }
     });
+    actions.append(send, copy);
+    result.append(h, meta, pre, actions);
+    result.hidden = false;
+    return { type: 'success', message: 'Your message is valid. Press "Open in my email app and send" to deliver it to ' + RECIPIENT + '.', reset: false };
+  }
