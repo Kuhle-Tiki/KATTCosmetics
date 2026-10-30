@@ -63,3 +63,16 @@
       },
       revalidate: { 'pe-contact-method': 'pe-contact-details' },
       onValid: handleEnquiry
+    },
+    contactForm: {
+      fields: {
+        'c-name': { rule: rules.name },
+        'c-email': { rule: rules.email },
+        'c-phone': { rule: rules.optPhone, optional: true },
+        'c-subject': { rule: rules.selectChosen('a message type') },
+        'c-message': { rule: v => !v ? 'Please type your message.'
+          : v.length < 10 ? 'Your message must be at least 10 characters (currently ' + v.length + ').'
+          : v.length > 1000 ? 'Your message must be 1000 characters or fewer (currently ' + v.length + ').' : '',
+          counter: 1000 }
+      },
+      onValid: handleContact
