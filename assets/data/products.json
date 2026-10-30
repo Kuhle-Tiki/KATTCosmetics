@@ -108,6 +108,39 @@
   ]
     },
     {
-        
+        "id": "dewy-skin-tint",
+        "name": "Dewy Skin Tint",
+        "category": "Face",
+        "price": 200,
+        "stock": "in-stock",
+        "shades": "",
+        "description": "Lightweight tint for a fresh, dewy everyday look.",
+        "image": "",
+        "alt": "",
+        "keywords": [
+            "skin tint",
+            "tint",
+            "dewy"
+  ] 
+    },
+    {
+       "id": "editorial-eye-palette",
+        "name": "Editorial Eye Shadow Palette",
+        "category": "Eyes",
+        "price": 200,
+        "stock": "limited",
+        "shades": "12 pans",
+        "description": "A 12-pan editorial eye shadow palette.",
+        "image": "assets/images/editorial-eye-palette.webp",
+        "alt": "Editorial Eye Shadow Palette",
+        "keywords": [
+            "editorial",
+            "eye shadow",
+            "eyeshadow",
+            "palette"
+  ] 
+    },
+    {
+
     }
 ]
