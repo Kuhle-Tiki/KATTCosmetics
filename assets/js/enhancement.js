@@ -135,3 +135,11 @@
         m.openPopup();
         mapEl.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' });
       });
+    });
+    if (markers.size) map.fitBounds(L.featureGroup([...markers.values()]).getBounds().pad(0.25));
+    map.once('focus', () => map.scrollWheelZoom.enable());
+  } else if (mapEl) {
+    mapEl.textContent = 'The interactive map could not load. Use the "View map" links in the table below.';
+  }
+  
+  
