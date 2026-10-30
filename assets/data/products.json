@@ -189,6 +189,23 @@
   ]
     },
     {
-        
+        "id": "eye-pencil",
+        "name": "Eye Pencil",
+        "category": "Eyes",
+        "price": null,
+        "stock": "in-stock",
+        "shades": "",
+        "description": "Smooth, blendable eye pencil for precise application.",
+        "image": "assets/images/eye-pencil.webp",
+        "alt": "Eye Pencil",
+        "keywords": [
+            "eye pencil",
+            "eyeliner",
+            "eye liner",
+            "liner"
+  ]
+    },
+    {
+
     }
 ]
