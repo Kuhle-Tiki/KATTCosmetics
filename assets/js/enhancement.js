@@ -110,4 +110,28 @@
   }
   markLightbox();
 
-  
+  /* ---------- 5. Interactive store map (Leaflet + OpenStreetMap) ---------- */
+  const mapEl = document.getElementById('map');
+  if (mapEl && window.L) {
+    const rows = [...document.querySelectorAll('#stores tbody tr[data-lat]')];
+    const map = L.map(mapEl, { scrollWheelZoom: false }).setView([-29.0, 25.0], 5);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+    const markers = new Map();
+    rows.forEach(tr => {
+      const lat = parseFloat(tr.dataset.lat), lng = parseFloat(tr.dataset.lng);
+      const city = tr.cells[0].textContent.trim(), place = tr.cells[1].textContent.trim(), notes = tr.cells[2].textContent.trim();
+      const popup = document.createElement('div');
+      const b = document.createElement('strong'); b.textContent = 'KATT Cosmetics - ' + city;
+      popup.append(b, document.createElement('br'), document.createTextNode(place), document.createElement('br'), document.createTextNode(notes));
+      const m = L.marker([lat, lng], { title: city, alt: 'KATT Cosmetics ' + city }).addTo(map).bindPopup(popup);
+      markers.set(tr, m);
+      const link = tr.querySelector('a.map-link');
+      if (link) link.addEventListener('click', e => {
+        e.preventDefault();
+        map.flyTo([lat, lng], 15, { animate: !reduceMotion });
+        m.openPopup();
+        mapEl.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' });
+      });
