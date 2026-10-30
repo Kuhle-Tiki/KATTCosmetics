@@ -298,6 +298,18 @@
   ]
     },
     {
-        
+        "id": "professional-brushes",
+        "name": "Professional Brushes",
+        "category": "Tools",
+        "price": null,
+        "stock": "in-stock",
+        "shades": "",
+        "description": "High-quality brushes for flawless makeup application.",
+        "image": "assets/images/professional-brushes.webp",
+        "alt": "Professional makeup brushes",
+        "keywords": [
+            "brush",
+            "brushes"
+  ] 
     }
 ]
