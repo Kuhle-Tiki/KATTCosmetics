@@ -141,6 +141,23 @@
   ] 
     },
     {
-
+        "id": "vibrant-eye-palette",
+        "name": "Vibrant Eye Palette",
+        "category": "Eyes",
+        "price": 250,
+        "stock": "in-stock",
+        "shades": "12 pans",
+        "description": "Bold and vibrant shades for a statement eye look.",
+        "image": "assets/images/vibrant-eye-palette.webp",
+        "alt": "Vibrant Eye Shadow Palette",
+        "keywords": [
+            "vibrant",
+            "eye shadow",
+            "eyeshadow",
+            "palette"
+  ]
+    },
+    {
+        
     }
 ]
