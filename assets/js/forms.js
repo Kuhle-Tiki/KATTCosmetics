@@ -154,3 +154,17 @@
     const form = $(formId);
     if (!form) return;
     form.setAttribute('novalidate', '');
+
+    const els = Object.keys(cfg.fields).map(id => ({ el: $(id), ...cfg.fields[id], id })).filter(f => f.el);
+    els.forEach(f => {
+      f.el.removeAttribute('required');                // our messages replace the browser's
+      if (f.counter) addCounter(f.el, f.counter);
+      const run = () => setError(f.el, validateField(f));
+      f.el.addEventListener('blur', run);
+      f.el.addEventListener('input', () => { if (f.el.classList.contains('is-invalid')) run(); });
+      f.el.addEventListener('change', run);
+    });
+    Object.entries(cfg.revalidate || {}).forEach(([src, target]) => {
+      const t = els.find(f => f.id === target);
+      if (t && $(src)) $(src).addEventListener('change', () => { if (trim(t.el.value)) setError(t.el, validateField(t)); });
+    });
