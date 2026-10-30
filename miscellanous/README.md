@@ -131,3 +131,4 @@ description /
 business	
 Portfolio link	    Optional; must be a valid http(s) URL
 
+enquiry.html (purpose: ask about products, cost and availability). After validation the typed products are matched to products.json and the visitor sees an itemised table with price, availability and an estimated total. Quantities of 10 or more show a 10% trade discount; unpriced items show "Price on request". It is an estimate only; the team confirms details.
