@@ -138,3 +138,13 @@
     if (!res.ok) throw new Error('server status ' + res.status);
     return res.json().catch(() => ({}));
   }
+  let catalogue = null;
+  async function loadCatalogue() {
+    if (catalogue) return catalogue;
+    try {
+      const res = await fetch(BASE + 'assets/data/products.json');      // AJAX request
+      if (!res.ok) throw new Error(res.status);
+      catalogue = await res.json();
+    } catch { catalogue = []; }
+    return catalogue;
+  }
