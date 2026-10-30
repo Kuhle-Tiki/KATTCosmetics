@@ -148,3 +148,9 @@
     } catch { catalogue = []; }
     return catalogue;
   }
+
+  /* ---------- Wire up each form that exists on the page ---------- */
+  Object.entries(CONFIG).forEach(([formId, cfg]) => {
+    const form = $(formId);
+    if (!form) return;
+    form.setAttribute('novalidate', '');
