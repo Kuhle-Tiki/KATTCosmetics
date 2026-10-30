@@ -236,6 +236,21 @@
   ]
     },
     {
+        "id": "butter-lipstick",
+        "name": "Butter Lipstick",
+        "category": "Lips",
+        "price": null,
+        "stock": "in-stock",
+        "shades": "",
+        "description": "Soft, creamy lip colour in a range of shades.",
+        "image": "assets/images/butter-lipstick.webp",
+        "alt": "Butter Lipstick",
+        "keywords": [
+            "butter lipstick",
+            "lipstick"
+  ]
+    },
+    {
         
     }
 ]
