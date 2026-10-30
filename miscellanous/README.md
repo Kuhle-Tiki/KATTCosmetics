@@ -73,6 +73,14 @@ Interactive map	        Contact page	            Leaflet map with a marker for e
                                                     the table's data-lat/data-lng; "View map" links fly to a store and open its popup.
 
 Animations	            All pages	                Sections fade and slide in on scroll 
-(CSS transitions + IntersectionObserver); cards lift on hover; accordion panels fade open. All disabled for prefers-reduced-motion.
-Mobile menu	All pages	The ☰ button toggles the navigation (aria-expanded), Esc closes it.
-DOM manipulation	Throughout	Cards, result tables, error messages and the lightbox are built with createElement/textContent.
+                                                    (CSS transitions + IntersectionObserver); cards lift on hover; 
+                                                    accordion panels fade open. All disabled for prefers-reduced-motion.
+
+Mobile menu	            All pages	                The ☰ button toggles the navigation (aria-expanded), Esc closes it.
+
+DOM manipulation	    Throughout	                Cards, result tables, error messages and the lightbox are 
+                                                    built with createElement/textContent.
+
+ 2. Dynamic content, search, filter and sort (Products page)
+
+assets/data/products.json holds 19 products. enhancements.js loads it with fetch() and renders the cards. Visitors can search (debounced, matches name/category/description/keywords), filter by category (also via links such as product.html?category=Lips from the home page), and sort by name or price. Cards include a wishlist button and an "Enquire" link that pre-fills the enquiry form.                                                   
