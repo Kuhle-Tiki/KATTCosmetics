@@ -284,3 +284,19 @@
     result.hidden = false;
     return { type: 'success', message: 'Your enquiry was validated and processed.', reset: false };
   }
+
+/* ---------- contact.html: compile the email for the visitor to send ---------- */
+  async function handleContact(form, d, result) {
+    const type = $('c-subject').selectedOptions[0].text;
+    const body = [
+      'Hello KATT Cosmetics,', '',
+      'Message type: ' + type,
+      'Name: ' + d['c-name'],
+      'Email: ' + d['c-email'],
+      d['c-phone'] ? 'Phone: ' + d['c-phone'] : null,
+      '', 'Message:', d['c-message'], '',
+      'Sent from the KATT Cosmetics website contact form.'
+    ].filter(l => l !== null).join('\n');
+    const subject = 'KATT Cosmetics - ' + type;
+    const href = 'mailto:' + RECIPIENT + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      
