@@ -17,6 +17,20 @@
 
     },
     {
+       "id": "glaze-foundation",
+  "name": "Glaze Foundation",
+  "category": "Face",
+  "price": null,
+  "stock": "in-stock",
+  "shades": "",
+  "description": "A lightweight foundation for a natural finish.",
+  "image": "assets/images/glaze-foundation.webp",
+  "alt": "Glaze Foundation bottle",
+  "keywords": [
+   "glaze",
+   "foundation" 
+    },
+    {
         
     }
 ]
