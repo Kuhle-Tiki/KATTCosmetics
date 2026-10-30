@@ -5,3 +5,16 @@ Uses the colour tokens defined in style.css (:root).
 ======================================================== */
 
 /*----------Mobile Navigation Toggle----------*/
+.nav.toggle { display: none; }
+@media (max-width: 700px)   {
+    .nav-toggle { 
+        display: inline-block; position: absolute: top: 14px; right: 20px;
+        padding: 8px 14 px; font-size: 1.1rem; line-height: 1;
+        background: transparent; border-color: var(--gold); color: var(--cream);
+    }
+    header { position: sticky; top: 0; }  /* keeps absolute toggle anchored to header*/
+    .js-enabled header nav {display: none; width: 100%; }
+    .js-enabled header nav.is-open {display: block; }
+    header nav ul { flex-direction: column; }
+}
+
