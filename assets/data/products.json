@@ -18,52 +18,66 @@
     },
     {
        "id": "glaze-foundation",
-  "name": "Glaze Foundation",
-  "category": "Face",
-  "price": null,
-  "stock": "in-stock",
-  "shades": "",
-  "description": "A lightweight foundation for a natural finish.",
-  "image": "assets/images/glaze-foundation.webp",
-  "alt": "Glaze Foundation bottle",
-  "keywords": [
-   "glaze",
-   "foundation" 
+        "name": "Glaze Foundation",
+        "category": "Face",
+        "price": null,
+        "stock": "in-stock",
+        "shades": "",
+        "description": "A lightweight foundation for a natural finish.",
+        "image": "assets/images/glaze-foundation.webp",
+        "alt": "Glaze Foundation bottle",
+        "keywords": [
+            "glaze",
+            "foundation" 
   ]
     },
     {
         "id": "glaze-foundation",
-  "name": "Glaze Foundation",
-  "category": "Face",
-  "price": null,
-  "stock": "in-stock",
-  "shades": "",
-  "description": "A lightweight foundation for a natural finish.",
-  "image": "assets/images/glaze-foundation.webp",
-  "alt": "Glaze Foundation bottle",
-  "keywords": [
-   "glaze",
-   "foundation"
+        "name": "Glaze Foundation",
+        "category": "Face",
+        "price": null,
+        "stock": "in-stock",
+        "shades": "",
+        "description": "A lightweight foundation for a natural finish.",
+        "image": "assets/images/glaze-foundation.webp",
+        "alt": "Glaze Foundation bottle",
+        "keywords": [
+            "glaze",
+            "foundation"
   ]
     },
     {
-      "id": "face-glue-primer",
-  "name": "Face Glue Primer",
-  "category": "Face",
-  "price": null,
-  "stock": "in-stock",
-  "shades": "",
-  "description": "A sticky-textured primer, perfect for long-lasting wear.",
-  "image": "assets/images/face-glue-primer.webp",
-  "alt": "Face Glue Primer tube",
-  "keywords": [
-   "face glue",
-   "glue primer",
-   "primer"
+        "id": "face-glue-primer",
+        "name": "Face Glue Primer",
+        "category": "Face",
+        "price": null,
+        "stock": "in-stock",
+        "shades": "",
+        "description": "A sticky-textured primer, perfect for long-lasting wear.",
+        "image": "assets/images/face-glue-primer.webp",
+        "alt": "Face Glue Primer tube",
+        "keywords": [
+            "face glue",
+            "glue primer",
+            "primer"
   ]  
-
     },
     {
-
+        "id": "face-freezie-primer",
+        "name": "Face Freezie Primer",
+        "category": "Face",
+        "price": null,
+        "stock": "limited",
+        "shades": "",
+        "description": "A cooling primer that preps skin for a matte finish.",
+        "image": "assets/images/face-freezie-primer.webp",
+        "alt": "Face Freezie Primer tube",
+        "keywords": [
+            "freezie",
+            "primer"
+  ]
     },
+    {
+        
+    }
 ]
