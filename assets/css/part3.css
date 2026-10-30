@@ -44,3 +44,10 @@ form button[disabled] { opacity: 0.6; cursor: wait; }
 .result-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
 .btn-link { display: inline-block; font-family: var(--font-display); font-weight: 600; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.04em; border-radius: 999px; background: var(--pink); color: #fff; padding: 12px 22px; text-decoration: none; }
 .btn-link:hover { text-decoration: none; filter: brightness(1.1); color: #fff; }
+
+/*-----------FAQ Accordion----------*/
+details > :not(summary) { animation: kattFade 0.3s ease; }
+details[open] { border-color: var(--pink); }
+@keyframes kattFade { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+
+/
