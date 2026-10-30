@@ -33,3 +33,11 @@ KATTCosmetics/
     ├── data/         products.json
     ├── vendor/leaflet/   Leaflet 1.9.4 (self-hosted map library)
     └── images/       product photography (WebP)
+
+Tech stack
+HTML5: semantic elements (header, nav, main, section, article, figure, dl, details, table).
+CSS3: custom properties, Flexbox, Grid, media queries, CSS transitions/animations.
+Vanilla JavaScript (ES6): fetch (AJAX), DOM manipulation, IntersectionObserver, localStorage.
+Leaflet 1.9.4 + OpenStreetMap tiles for the store map (library self-hosted).
+Google Fonts: Poppins and Inter.
+Git/GitHub for version control; GitHub Pages for hosting.    
