@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US - KATT Cosmetics</title>
+    <meta name="description" content="Contact KATT Cosmetics - customer support, FAGs, and store Locations"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!-- ============ HEADER: site logo + primary navigation ============ -->
+    <header>
+        <a href="../index.html">KATT Cosmetics</a>
+        <!-- Hamburger button: hidden on desktop, shown below the 768px breakpoint (see CSS) -->
+        <button type="button" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">☰</button>
+        <nav aria-label="Primary navigation" id="primary-nav">
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="product.html">PRODUCTS</a></li>
+                <li><a href="contact.html" aria-current="page">CONTACT</a></li>
+                <li><a href="muatradeportal.html">MUA TRADE PORTAL</a></li>
+                <li><a href="enquiry.html">ENQUIRY</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <!-- INTRO -->
+        <section aria-labelledby="contact-heading">
+            <h1 id="contact-heading">Get in Touch</h1>
+            <p>Questions about a product, an existing enquiry or something else? Reach us directly - we typically reply within 1-2 business days.</p>
+        </section>
+        <!-- DIRECT CONTACT DETAILS: WhatsApp / email / Instagram / hours, shown as a definition list -->
+        <section aria-labelledby="contact-details-heading">
+            <h2 id="contact-details-heading">Direct contact details</h2>
+            <dl>
+                <dt>WhatsApp</dt>
+                <dd><a href="https://wa.me/27216660140">27 21 666 0140</a></dd>
+                <dt>Email</dt>
+                <dd><a href="mailto:hello@kattcosmetics.co.za">hello@kattcosmetics.co.za</a></dd>
+                <dt>Instagram</dt>
+                <dd><a href="https://www.instagram.com/kattcosmetics/">@kattcosmetics</a></dd>
+                <dt>Hours</dt>
+                <dd>Mon-Fri, 9AM-5PM SAST</dd>
+            </dl>
+        </section>
+        <!-- CONTACT FORM: front-end only, action="#" — real submission handled by a backend/form service later -->
+        <section aria-labelledby="contact-form-heading">
+            <h2 id="contact-form-heading">Send a message</h2>
+            <form id="contactForm">
+                <p>
+                    <label for="c-name">Full name</label><br/>
+                    <input type="text" id="c-name" name="name" required/>
+                </p>
+                <p>
+                    <label for="c-email">Email address</label><br/>
+                    <input type="email" id="c-email" name="email" required/>
+                </p>
+                <p>
+                    <label for="c-subject">Subject</label><br/>
+                    <p id="contactResponse" role="status"></p>
+                        <option value="general">General question</option>
+                        <option value="product">Product question</option>
+                        <option value="order">Order question</option>
+                        <option value="other">Something else</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="c-message">Message</label><br/>
+                    <textarea id="c-message" name="message" rows="6" required></textarea>
+                </p>
+                <p>
+                    <button type="submit">Send message</button>
+                </p>
+            </form>
+        </section> 
+        <!-- FAQ: uses native <details>/<summary> so it works with zero JavaScript -->
+        <section aria-labelledby="faq-heading">
+            <h2 id="faq-heading">Frequently asked questions</h2>
+            <details>
+                <summary>How do i buy a product?</summary>
+                <p>
+                    This website does not process online payements. Browse our producs, then contact us via WhatsApp, email or instagram to confirm availability, pricing and delivery or collection
+                </p>
+            </details>
+            <details>
+                <summary>How long does shipping take?</summary>
+                <p>
+                    Shipping typically takes 3-5 business days within South Africa. International shipping times vary by destination.
+                </p>
+            </details>
+            <details>
+                <summary>What is your returns policy?</summary>
+                <p>
+                    Unopenend products can be returned within 30 days of purchas for a full refund.
+                </p>
+            </details>
+            <details>
+                <summary>Are your products cruelty-free?</summary>
+                <p>
+                    Yes, all KATT Cosmetics products are cruelty-free and not tested on animals.
+            </details>
+        </section>
+        <!-- STORE LOCATOR: real HTML <table> with pop-up/retail locations -->
+        <section aria-labelledby="stores-heading" id="stores">
+            <h2 id="stores-heading">Store locations</h2>
+            <p>Find us at a pop-up store or event near you. Check our Instagram for the latest updates on where to find KATT Cosmetics in person.</p>
+            <table>
+                <caption>KATT Cosmetics store and pop-up locations</caption>
+                <thread>
+                    <tr>
+                        <th scope="col">City</th>
+                        <th scope="col">Location</th>
+                        <th scope="col">Notes</th>
+                </thread>
+                <tbody>
+                    <tr>
+                        <td>Cape Town</td>
+                        <td>V&A Waterfront, Shop 123</td>
+                        <td>Open Mon-Sat, 10AM-6PM</td>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.4853939788445!2d18.417708917443843!3d-33.90290489999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc6700352fefad%3A0x929cfce58756ed20!2sWaterfront%20Mall!5e0!3m2!1sen!2sza!4v1789759053416!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    </tr>
+                    <tr>
+                        <td>Joheannesburg</td>
+                        <td>Sandton City, Beauty Mall</td>
+                        <td>Retail partner</td>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.6941943189518!2d28.0551925!3d-26.1088994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e957347d5031f03%3A0x1a9674ec1396aea5!2sSandton%20Mall!5e0!3m2!1sen!2sza!4v1789759111399!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    </tr>
+                    <tr>
+                        <td>Durban</td>
+                        <td>Gateway Theatre of Shopping, Level 2</td>
+                        <td>Pop-up - weekends only</td>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.79371891553!2d31.0664381!3d-29.725733999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef705ec3a19b91f%3A0xa6db01dbe37d78c9!2sGateway%20Theatre%20Of%20Shopping!5e0!3m2!1sen!2sza!4v1789759149869!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    </tr>
+                </tbody>
+            </table>
+        </section>    
+              
+            
+    </main>
+    <!-- ============ FOOTER: contact details + secondary navigation ============ -->
+    <footer>
+        <section aria-labelledby="footer-contact-heading">
+            <h2 id="footer-contact-heading">Contact</h2>
+            <ul>
+                <li><a href="https://wa.me/27216660140">WhatsApp: +27 21 666 0140</a></li>
+                <li><a href="mailto:hello@kattcosmetics.co.za">Email: hello@kattcosmetics.co.za</a></li>
+                <li><a href="https://www.instagram.com/kattcosmetics/">Instagram: @kattcosmetics</a></li>
+            </ul>
+        </section>
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="product.html">PRODUCTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="muatradeportal.html">MUA Trade Portal</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2026 KATT Cosmetics. All rights reserved.</p>
+    </footer>
+    <!-- Wishlist functionality only — no purchasing/cart logic on this page -->
+    <script src="../js/script.js"></script>
+    
+    <!-- Contact form submission handler -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Get form values
+            const name = document.getElementById('c-name').value;
+            const email = document.getElementById('c-email').value;
+            const subject = document.getElementById('c-subject').value;
+            const message = document.getElementById('c-message').value;
+
+            // Construct the email subject and body
+            const emailSubject = "KATT Cosmetics - " + subject;
+
+            // Construct the email body with line breaks for better readability
+            const emailBody = "Name:" + name + "\n" + "Email:" + email + "\n" + "Message type: " + subject + "\n\n" + "Message:\n" + message;
+
+            const mailLink = "mailto:hello@kattcosmetics.co.za?subject=" + encodeURIComponent(emailSubject) + "&body=" + encodeURIComponent(emailBody);
+
+            // Open the user's default email client with the pre-filled email
+            document.getElementById("contactResponse").textcontent = "Your message has been prepared. Your email application" + "will open so you can review and send it. If your email application does not open, please contact us directly via WhatsApp or email.";
+          
+        });
+     
+</body>
+</html> 
