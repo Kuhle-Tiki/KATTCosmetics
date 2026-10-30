@@ -3,17 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KATT Cosmetics - Professional Makeup, Made Acessible</title>
-    <meta name="description" content="KATT Cosmetics - professionalrofessional-grade makeup for MUAs and everyday beauty lovers. Enquire via WhatsApp, email, or phone. "/>
+    <title>KATT Cosmetics | Professional Makeup Made Accessible</title>
+    <meta name="description" content="KATT Cosmetics: affordable professional-grade makeup for MUAs and everyday beauty lovers in South Africa. Enquire via WhatsApp, email or phone.">
+    <meta name="robots" content="index, follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://tile.openstreetmap.org; connect-src 'self' https://formspree.io; object-src 'none'; base-uri 'self'">
+    <link rel="canonical" href="https://kuhle-tiki.github.io/KATTCosmetics/index.html">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231a1a1a'/%3E%3Ctext x='50' y='72' font-size='64' text-anchor='middle' fill='%23e6007a' font-family='Arial' font-weight='700'%3EK%3C/text%3E%3C/svg%3E">
+    <!-- Open Graph tags: control how the page looks when shared on social media -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="KATT Cosmetics">
+    <meta property="og:title" content="KATT Cosmetics | Professional Makeup Made Accessible">
+    <meta property="og:description" content="KATT Cosmetics: affordable professional-grade makeup for MUAs and everyday beauty lovers in South Africa. Enquire via WhatsApp, email or phone.">
+    <meta property="og:url" content="https://kuhle-tiki.github.io/KATTCosmetics/index.html">
+    <meta property="og:image" content="https://kuhle-tiki.github.io/KATTCosmetics/assets/images/matte-foundation.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/part3.css">
+    <!-- Structured data (JSON-LD) helps search engines understand the business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "KATT Cosmetics",
+      "url": "https://kuhle-tiki.github.io/KATTCosmetics/",
+      "description": "Professional-grade makeup for makeup artists and everyday beauty lovers in South Africa.",
+      "email": "hello@kattcosmetics.co.za",
+      "telephone": "+27216660140",
+      "areaServed": "ZA",
+      "sameAs": ["https://www.instagram.com/kattcosmetics/"]
+    }
+    </script>
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <!-- ============ HEADER: site logo + primary navigation ============ -->
     <header>
         <a href="index.html">KATT Cosmetics</a>
-        <nav aria-label="Primary navigation">
+        <!-- Hamburger button: hidden on desktop, shown below 700px (see part3.css), toggled by enhancements.js -->
+        <button type="button" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">&#9776;</button>
+        <nav aria-label="Primary navigation" id="primary-nav">
             <ul>
                 <li><a href="index.html" aria-current="page">HOME</a></li>
                 <li><a href="pages/about.html">ABOUT</a></li>
@@ -24,112 +55,115 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="main-content">
         <!-- HERO: main banner introducing the brand, styled dark in Part 2 CSS -->
         <section aria-labelledby="hero-heading">
             <h1 id="hero-heading">Professional Makeup, Made Accessible</h1>
-            <p>KATT Cosmetics is a professional makeup brand for backstage artists and everyday beauty lovers. browse our prodeucts below, then reach out via Whatsapp, email, or phone - we dont directly sell through website.</p>
+            <p>KATT Cosmetics is a professional makeup brand for backstage artists and everyday beauty lovers. Browse our products below, then reach out via WhatsApp, email, or phone. We don't sell directly through this website.</p>
             <p>
                 <a href="pages/product.html">View Products</a> |
                 <a href="pages/enquiry.html">Make an Enquiry</a>
             </p>
         </section>
-        <!-- HOW TO BUY: explains there is no online checkout — every product links out to WhatsApp/email/phone instead -->
-        <section aria-labelledby="how to buy heading">
-            <h2 id="how to buy heading">How to Buy</h2>
-            <p>We do not sell directly through our website. 
+        <!-- HOW TO BUY: explains there is no online checkout; every product links out to WhatsApp/email/phone instead -->
+        <section aria-labelledby="how-to-buy-heading">
+            <h2 id="how-to-buy-heading">How to Buy</h2>
+            <p>We do not sell directly through our website.
                 To purchase our products, please reach out to us via WhatsApp,
-                email, or phone. Our team will assist you with your order and 
+                email, or phone. Our team will assist you with your order and
                 provide you with the necessary information.</p>
-                <ul>
-                    <li><a href="https://wa.me/27216661340">Phone: +27 21 666 1340</a></li>
-                    <li><a href="mailto:hello@kattcosmetics.co.za">Email: hello@kattcosmetics.co.za</a></li>
-                    <li><a href="https://www.instagram.com/kattcosmetics/">Instagram: @kattcosmetics</a></li>
-                </ul>
+            <ul>
+                <li><a href="https://wa.me/27216660140" rel="noopener noreferrer">Phone: +27 21 666 0140</a></li>
+                <li><a href="mailto:hello@kattcosmetics.co.za">Email: hello@kattcosmetics.co.za</a></li>
+                <li><a href="https://www.instagram.com/kattcosmetics/" rel="noopener noreferrer">Instagram: @kattcosmetics</a></li>
+            </ul>
         </section>
-        <!-- CATEGORY GRID: quick links into the product page by category -->
+        <!-- CATEGORY GRID: links open the product page already filtered by category -->
         <section aria-labelledby="categories-heading">
-            <h2 id="Categories-heading">Shop by Category</h2>
+            <h2 id="categories-heading">Shop by Category</h2>
             <ul>
                 <li>
                     <article>
                         <h3>Face</h3>
                         <p>Foundation, concealer, and setting powder.</p>
-                        <a href="pages/product.html">View Face products</a>
+                        <a href="pages/product.html?category=Face">View Face products</a>
                     </article>
                 </li>
                 <li>
                     <article>
                         <h3>Eyes</h3>
-                        <p>Eye Palettes, Eye Liners, and Mascara.</p>
-                        <a href="pages/product.html">View Eye products</a>
+                        <p>Eye palettes, eye pencils, and mascara.</p>
+                        <a href="pages/product.html?category=Eyes">View Eye products</a>
                     </article>
                 </li>
                 <li>
                     <article>
-                       <h3>Lips</h3> 
-                       <p>Lipstick, Lip Gloss and Lip Liners.</p>
-                       <a href="pages/product.html">View Lip products</a>
+                        <h3>Lips</h3>
+                        <p>Lipstick, lip gloss and lip kits.</p>
+                        <a href="pages/product.html?category=Lips">View Lip products</a>
                     </article>
                 </li>
                 <li>
                     <article>
                         <h3>Tools</h3>
-                        <p>Brushes, sponges, and kits.</p>
-                        <a href="pages/product.html">View Tools Products</a>
+                        <p>Brushes and sponges.</p>
+                        <a href="pages/product.html?category=Tools">View Tools products</a>
                     </article>
-                </li>    
+                </li>
             </ul>
         </section>
-        <!-- FEATURED PRODUCTS: each card has a wishlist button (data-product-id) handled by js/script.js -->
+        <!-- FEATURED PRODUCTS: each card has a wishlist button (data-product-id) handled by wishlist.js -->
         <section aria-labelledby="featured-heading">
             <h2 id="featured-heading">Featured products</h2>
             <ul>
                 <li>
                     <article>
-                        <figure>
-                            <img src="./assets/images/78c25063-9f84-4d56-9409-04ca40710450.__CR0,0,1464,600_PT0_SX1464_V1___.jpg" alt="24HR Matte Foundation bottle" width="200" height="200" />
+                        <figure data-lightbox>
+                            <img src="assets/images/matte-foundation.webp" alt="24HR Matte Foundation bottle" width="200" height="200" loading="lazy">
                             <figcaption>24HR Matte Foundation</figcaption>
                         </figure>
                         <h3>24HR Matte Foundation</h3>
                         <p>R150 - 24 shades available.</p>
-                        <a href="pages/product.html">View Product</a>
-                        <button type="button" class="wishlist-btn" data-product-id="foundation-24HR" aria-pressed="false">Add to Wishlist</button>
+                        <a href="pages/product.html">View product</a>
+                        <button type="button" class="wishlist-btn" data-product-id="foundation-24hr" aria-pressed="false">Add to Wishlist</button>
                     </article>
                 </li>
                 <li>
                     <article>
-                        <figure>
-                            <img src="./assets/images/matte-lipstick.jpg.webp" alt="Matte Lipstick" width="200" height="200" />
+                        <figure data-lightbox>
+                            <img src="assets/images/matte-lipstick.webp" alt="Matte Lipstick" width="200" height="200" loading="lazy">
                             <figcaption>Matte Lipstick</figcaption>
                         </figure>
                         <h3>Matte Lipstick</h3>
-                        <p>R50 - 16 shades availabe.</p>
-                        <a href="pages/product.html">View product</a>
-                        <button type="button" class="wishlist-btn" data-product-id="velvel-lip-stain" aria-pressed="false">Add to Wishlist</button>
+                        <p>R50 - 16 shades available.</p>
+                        <a href="pages/product.html?category=Lips">View product</a>
+                        <button type="button" class="wishlist-btn" data-product-id="matte-lipstick" aria-pressed="false">Add to Wishlist</button>
                     </article>
                 </li>
                 <li>
                     <article>
-                        <figure>
-                            <img src="./assets/images/eye-shadow.jpg.webp" alt="Editorial Eye Shadow Palette" width="200" height="200"/>
+                        <figure data-lightbox>
+                            <img src="assets/images/editorial-eye-palette.webp" alt="Editorial Eye Shadow Palette" width="200" height="200" loading="lazy">
                             <figcaption>Editorial Eye Shadow Palette</figcaption>
                         </figure>
                         <h3>Editorial Eye Shadow Palette</h3>
-                        <p>R200 - 12-pan Palette.</p>
-                        <a href="pages/product.html">View product</a>
+                        <p>R200 - 12-pan palette.</p>
+                        <a href="pages/product.html?category=Eyes">View product</a>
                         <button type="button" class="wishlist-btn" data-product-id="editorial-eye-palette" aria-pressed="false">Add to Wishlist</button>
                     </article>
                 </li>
             </ul>
         </section>
-        <!-- NEWSLETTER SIGNUP: front-end only for now, form action="#" — see js/script.js for the placeholder submit handler -->
+        <!-- NEWSLETTER SIGNUP: validated by forms.js (#newsletterForm) -->
         <section aria-labelledby="newsletter-heading">
             <h2 id="newsletter-heading">Stay updated</h2>
-            <p>Sign up for launch news and tutorials. We dont sell anything through this form - it's for email updates only.</p>
-            <form action="#" method="post">
-                <label for="email" id="newsletter-email" name="email" required>Email:</label>
-                <button type="submit">Subscribe</button>
+            <p>Sign up for launch news and tutorials. We don't sell anything through this form - it's for email updates only.</p>
+            <form id="newsletterForm" action="mailto:hello@kattcosmetics.co.za?subject=Newsletter%20signup" method="post" enctype="text/plain">
+                <p>
+                    <label for="newsletter-email">Email</label>
+                    <input type="email" id="newsletter-email" name="email" autocomplete="email" placeholder="you@example.com" required>
+                </p>
+                <p><button type="submit">Subscribe</button></p>
             </form>
         </section>
     </main>
@@ -137,9 +171,9 @@
     <footer>
         <section aria-labelledby="footer-contact-heading">
             <h2 id="footer-contact-heading">Contact KATT Cosmetics</h2>
-            <p>WhatsApp: <a href="https://wa.me/27216660140">+27 21 666 0140</a></p>
+            <p>WhatsApp: <a href="https://wa.me/27216660140" rel="noopener noreferrer">+27 21 666 0140</a></p>
             <p>Email: <a href="mailto:hello@kattcosmetics.co.za">hello@kattcosmetics.co.za</a></p>
-            <p>Instagram: <a href="https://www.instagram.com/kattcosmetics">kattcosmetics</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/kattcosmetics/" rel="noopener noreferrer">@kattcosmetics</a></p>
         </section>
         <nav aria-label="Footer navigation">
             <ul>
@@ -147,14 +181,15 @@
                 <li><a href="pages/about.html">ABOUT</a></li>
                 <li><a href="pages/product.html">PRODUCTS</a></li>
                 <li><a href="pages/contact.html">CONTACT</a></li>
-                <li><a href="pages/muatradeportal.html">MUA Trade Portal</a></li>
-                <li><a href="pages/enquiry.html">Enquiry</a></li>
+                <li><a href="pages/muatradeportal.html">MUA TRADE PORTAL</a></li>
+                <li><a href="pages/enquiry.html">ENQUIRY</a></li>
             </ul>
         </nav>
         <p>&copy; 2026 KATT Cosmetics. All rights reserved.</p>
     </footer>
-    <!-- Wishlist functionality only — no purchasing/cart logic, this site does not sell online -->
-    <script src="js/script.js"></script>
-    
+    <!-- Scripts are deferred so they never block page rendering -->
+    <script src="assets/js/wishlist.js" defer></script>
+    <script src="assets/js/enhancements.js" defer></script>
+    <script src="assets/js/forms.js" defer></script>
 </body>
 </html>
