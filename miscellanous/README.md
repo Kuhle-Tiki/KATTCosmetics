@@ -110,3 +110,7 @@ robots.txt: allows crawling and points to the sitemap.
 sitemap.xml: lists all six pages with priorities and last-modified dates.
 Page speed: WebP images (the two large JPGs were converted and resized, from about 1.4 MB and 115 KB to 41 KB and 86 KB), lazy loading, defer on scripts, font preconnect, no external frameworks, self-hosted map library, and the three heavy Google Maps iframes removed.
 Security: Content-Security-Policy meta tag (scripts and connections limited to this site); all dynamic text inserted with textContent (no innerHTML with user input) to prevent XSS; rel="noopener noreferrer" on external links; referrer policy; honeypot field against spam bots; no payments or sensitive data handled; HTTPS provided by GitHub Pages.
+
+4. Forms and validation (assets/js/forms.js)
+
+All four forms (enquiry, contact, newsletter, trade application) use HTML5 attributes (required, type, min, max, maxlength, autocomplete) plus JavaScript validation. Messages appear beside each field (role="alert", aria-invalid, aria-describedby). Fields validate on blur, on input after an error, and on submit; the first invalid field receives focus.
