@@ -14,3 +14,4 @@ Live pages · 2. Folder structure · 3. Tech stack · 4. Design system · 5. Par
 Live pages
 Page	File	Purpose
 Home	index.html	Hero, how-to-buy, category links, featured products, newsletter signup
+About Us	pages/about.html	Brand history, mission, vision, values, target audience
