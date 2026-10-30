@@ -35,4 +35,14 @@
       if (i === 0) return;                         // first section is already on screen
       el.classList.add('reveal'); io.observe(el);
     });
-  }  
+  }
+  
+/* ---------- 3. Accordion: opening one FAQ closes the others ---------- */
+  document.querySelectorAll('[data-accordion]').forEach(group => {
+    const items = [...group.querySelectorAll('details')];
+    items.forEach(d => d.addEventListener('toggle', () => {
+      if (d.open) items.forEach(o => { if (o !== d) o.open = false; });
+    }));
+  });
+  
+  
