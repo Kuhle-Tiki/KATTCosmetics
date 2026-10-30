@@ -118,4 +118,11 @@
     el.classList.toggle('is-valid', !msg && trim(el.value) !== '');
     el.setAttribute('aria-invalid', msg ? 'true' : 'false');
     return !msg;
-  } 
+  }
+     function addCounter(el, max) {
+    const c = document.createElement('span');
+    c.id = el.id + '-count'; c.className = 'char-count';
+    el.insertAdjacentElement('afterend', c);
+    const upd = () => { c.textContent = el.value.length + ' / ' + max; };
+    el.addEventListener('input', upd); upd();
+  }
