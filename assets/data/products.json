@@ -29,8 +29,41 @@
   "keywords": [
    "glaze",
    "foundation" 
+  ]
     },
     {
-        
-    }
+        "id": "glaze-foundation",
+  "name": "Glaze Foundation",
+  "category": "Face",
+  "price": null,
+  "stock": "in-stock",
+  "shades": "",
+  "description": "A lightweight foundation for a natural finish.",
+  "image": "assets/images/glaze-foundation.webp",
+  "alt": "Glaze Foundation bottle",
+  "keywords": [
+   "glaze",
+   "foundation"
+  ]
+    },
+    {
+      "id": "face-glue-primer",
+  "name": "Face Glue Primer",
+  "category": "Face",
+  "price": null,
+  "stock": "in-stock",
+  "shades": "",
+  "description": "A sticky-textured primer, perfect for long-lasting wear.",
+  "image": "assets/images/face-glue-primer.webp",
+  "alt": "Face Glue Primer tube",
+  "keywords": [
+   "face glue",
+   "glue primer",
+   "primer"
+  ]  
+
+    },
+    {
+
+    },
 ]
