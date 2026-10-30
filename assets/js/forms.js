@@ -76,3 +76,10 @@
           counter: 1000 }
       },
       onValid: handleContact
+    },
+    newsletterForm: {
+      fields: { 'newsletter-email': { rule: rules.email } },
+      onValid: async (form, data) => {
+        await ajaxSubmit({ form: 'newsletter', ...data });
+        return { type: 'success', message: 'Thanks for subscribing! Launch news and tutorials are on their way.', reset: true };
+      }
