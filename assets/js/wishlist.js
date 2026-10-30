@@ -14,7 +14,12 @@ function getWishlist() {
 }
 
 function saveWishlist(items) {
-  localStorage.setItem(WISHLIST_KEY, JSON.stringify(items));
+  try {
+    localStorage.setItem(WISHLIT_KEY, JSON.stringify(items));
+  }
+  catch (e) {
+    /* Storage unavailable (private mode) - wishlist just wont persist*/
+  }
 }
 
 function isInWishlist(productId) {
@@ -47,22 +52,18 @@ function renderWishlistSection() {
   if (!list) return;
 
   const items = getWishlist();
-  list.innerHTML = "";
+  list.replaceChildren(); // Clear existing items
 
-  if (items.length === 0) {
-    if (emptyMessage) emptyMessage.hidden = false;
-    return;
-  }
-
-  if (emptyMessage) emptyMessage.hidden = true;
-
+  if (emptyMesaage) emptyMessage.hidden = items.length > 0;
+    
   items.forEach((productId) => {
     const li = document.createElement("li");
-    li.textContent = productId + " ";
+    li.textContent = (productNames[productId] || productId) + " "; // Fallback to productId if name not found
 
     const removeBtn = document.createElement("button");
     removeBtn.type = "button";
     removeBtn.textContent = "Remove";
+    removeBtn.setAttribute("aria-label", "Remove " + (productNames[productId] || productId) + " from wishlist");
     removeBtn.addEventListener("click", () => {
       toggleWishlistItem(productId);
       renderWishlistButtons();
@@ -78,7 +79,8 @@ document.addEventListener("DOMContentLoaded", () => {
   renderWishlistButtons();
   renderWishlistSection();
 
-  document.querySelectorAll(".wishlist-btn").forEach((btn) => {
+  // Event delegation for wishlist buttons to handle clicks and update the wishlist state
+  document.addEv {
     btn.addEventListener("click", () => {
       const productId = btn.getAttribute("data-product-id");
       toggleWishlistItem(productId);
