@@ -78,6 +78,20 @@
   ]
     },
     {
+     "id": "full-coverage-concealer",
+  "name": "Full Coverage Concealer",
+  "category": "Face",
+  "price": 100,
+  "stock": "in-stock",
+  "shades": "",
+  "description": "High-coverage concealer for correcting and brightening.",
+  "image": "",
+  "alt": "",
+  "keywords": [
+   "concealer"
+  ]   
+    },
+    {
         
     }
 ]
