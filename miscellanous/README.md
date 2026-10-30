@@ -10,3 +10,7 @@ Part 1 delivered the proposal document and a plain semantic HTML5 structure. Par
 
 Contents
 Live pages · 2. Folder structure · 3. Tech stack · 4. Design system · 5. Part 3 features · 6. Changelog · 7. Running locally · 8. Known limitations · 9. References
+
+Live pages
+Page	File	Purpose
+Home	index.html	Hero, how-to-buy, category links, featured products, newsletter signup
