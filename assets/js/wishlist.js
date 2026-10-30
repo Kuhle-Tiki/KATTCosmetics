@@ -15,12 +15,14 @@ function getWishlist() {
 
 function saveWishlist(items) {
   try {
-    localStorage.setItem(WISHLIT_KEY, JSON.stringify(items));
+    localStorage.setItem(WISHLIST_KEY, JSON.stringify(items));
   }
   catch (e) {
     /* Storage unavailable (private mode) - wishlist just wont persist*/
   }
 }
+
+const productNames = {};
 
 function isInWishlist(productId) {
   return getWishlist().includes(productId);
@@ -54,7 +56,7 @@ function renderWishlistSection() {
   const items = getWishlist();
   list.replaceChildren(); // Clear existing items
 
-  if (emptyMesaage) emptyMessage.hidden = items.length > 0;
+  if (emptyMessage) emptyMessage.hidden = items.length > 0;
     
   items.forEach((productId) => {
     const li = document.createElement("li");
@@ -81,28 +83,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Event delegation for wishlist buttons to handle clicks and update the wishlist state
   document.addEventListener("click", (event) => {
-   const btn = e.target.closest("wishlist-btn");
-   if (!btn) return;
-   toggleWishlistItem(btn.getAttribute("data-product-id"));
-   renderWishlistButtons();
-   renderWishlistSection();});
+    const btn = event.target.closest(".wishlist-btn");
+    if (!btn) return;
+    toggleWishlistItem(btn.getAttribute("data-product-id"));
+    renderWishlistButtons();
+    renderWishlistSection();
   });
 
   // Re-sync buttons after the catalogue renders them
-  document.addEventListener("katt:catalogue-rendered", renderWiahliatButtons);
-  
-  // Generic front-end form handling (no backend / no payment processing)
-  document.querySelectorAll("form").forEach((form) => {
-    form.addEventListener("submit", (e) => {
-      // Skip the shade-select form on product.html, which intentionally
-      // redirects to enquiry.html with a query string.
-      if (form.getAttribute("action") === "enquiry.html") return;
+  document.addEventListener("katt:catalogue-rendered", renderWishlistButtons);
 
-      e.preventDefault();
-      alert(
-        "Thanks! Your message has been received. This form is a front-end placeholder — connect it to a backend or form service before going live. No payment is processed through this website."
-      );
-      form.reset();
-    });
-  });
-});
+  // Show product names instead of ids in the wishlist
+  fetch("assets/data/products.json")
+    .then((r) => (r.ok ? r.json() : []))
+    .then((data) => {
+      data.forEach((p) => { productNames[p.id] = p.name; });
+      renderWishlistSection();
+    })
+    .catch(() => {});
+});    
+ 
