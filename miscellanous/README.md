@@ -19,3 +19,17 @@ Products	pages/product.html	Featured product with shade picker, plus a searchabl
 MUA Trade Portal	pages/muatradeportal.html	Trade benefits, eligibility, validated application form
 Enquire to Purchase	pages/enquiry.html	Process explainer, validated enquiry form with instant price/availability estimate, FAQ accordion
 Contact	pages/contact.html	Contact details, validated message form that builds an email, FAQ accordion, interactive store map
+
+Folder structure
+KATTCosmetics/
+├── index.html
+├── README.md
+├── robots.txt
+├── sitemap.xml
+├── pages/            about, contact, enquiry, muatradeportal, product
+└── assets/
+    ├── css/          style.css (Part 2), part3.css (Part 3)
+    ├── js/           wishlist.js, enhancements.js, forms.js
+    ├── data/         products.json
+    ├── vendor/leaflet/   Leaflet 1.9.4 (self-hosted map library)
+    └── images/       product photography (WebP)
