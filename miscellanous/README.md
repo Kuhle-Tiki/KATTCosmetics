@@ -7,3 +7,6 @@ A multi-page website for KATT Cosmetics, a fictional professional makeup and bea
 KATT Cosmetics is a showcase site, not an online store. There is no cart or checkout. Every "purchase" path routes the customer to WhatsApp, email, phone, or an enquiry form.
 
 Part 1 delivered the proposal document and a plain semantic HTML5 structure. Part 2 added the external stylesheet, responsive design, wishlist and documentation. Part 3 (this submission) adds JavaScript interactivity, dynamic content, SEO, validated forms with email processing, and deployment.
+
+Contents
+Live pages · 2. Folder structure · 3. Tech stack · 4. Design system · 5. Part 3 features · 6. Changelog · 7. Running locally · 8. Known limitations · 9. References
