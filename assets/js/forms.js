@@ -39,3 +39,27 @@
     textMax: (max, label) => v => v.length > max ? label + ' must be ' + max + ' characters or fewer (currently ' + v.length + ').' : '',
     selectChosen: label => v => !v ? 'Please choose ' + label + '.' : ''
   };
+
+  /* ---------- Per-form configuration ---------- */
+  const CONFIG = {
+    enquiryForm: {
+      fields: {
+        'pe-name': { rule: rules.name },
+        'pe-product': { rule: v => !v ? 'Tell us which product(s) you are interested in.'
+          : v.length < 3 ? 'Please enter at least 3 characters.'
+          : v.length > 200 ? 'Please keep this under 200 characters.' : '' },
+        'pe-quantity': { rule: v => !v ? 'Please enter a quantity.'
+          : !/^\d+$/.test(v) ? 'Quantity must be a whole number.'
+          : (+v < 1 || +v > 500) ? 'Quantity must be between 1 and 500.' : '' },
+        'pe-contact-method': { rule: rules.selectChosen('a contact method') },
+        'pe-contact-details': { rule: v => {
+          if (!v) return 'Please enter your email address or phone number.';
+          const m = $('pe-contact-method').value;
+          if (m === 'email') return isEmail(v) ? '' : 'You chose email, so enter a valid email address (name@example.com).';
+          if (m === 'phone' || m === 'whatsapp') return isPhone(v) ? '' : 'Enter a valid South African number, e.g. 021 666 0140 or +27 82 123 4567.';
+          return isEmail(v) || isPhone(v) ? '' : 'Enter a valid email address or South African phone number.';
+        } },
+        'pe-message': { rule: rules.textMax(500, 'Notes'), optional: true, counter: 500 }
+      },
+      revalidate: { 'pe-contact-method': 'pe-contact-details' },
+      onValid: handleEnquiry
