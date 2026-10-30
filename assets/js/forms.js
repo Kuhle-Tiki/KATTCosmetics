@@ -190,3 +190,13 @@
       if (f.optional && v === '') return '';
       return f.rule(v);
     }
+
+    let busy = false;
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      if (busy || hp.value) return;
+      result.hidden = true; result.replaceChildren(); say('');
+
+      let firstBad = null;
+      els.forEach(f => { if (!setError(f.el, validateField(f)) && !firstBad) firstBad = f.el; });
+      if (firstBad) { say('Please fix the highlighted fields and try again.', 'error'); firstBad.focus(); return; }
