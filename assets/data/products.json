@@ -251,6 +251,50 @@
   ]
     },
     {
-        
+        "id": "lipstick-kit",
+        "name": "Lipstick Kit",
+        "category": "Lips",
+        "price": null,
+        "stock": "limited",
+        "shades": "",
+        "description": "A complete set of lipsticks for every occasion.",
+        "image": "assets/images/lipstick-kit.webp",
+        "alt": "Lipstick Kit",
+        "keywords": [
+            "lipstick kit",
+            "kit",
+            "lipstick"
+  ]
+    },
+    {
+        "id": "caramel-drip-lip-gloss",
+        "name": "Caramel Drip Lip Gloss",
+        "category": "Lips",
+        "price": 100,
+        "stock": "in-stock",
+        "shades": "16 shades",
+        "description": "A hydrating, high-shine lip gloss.",
+        "image": "assets/images/caramel-drip-lip-gloss.webp",
+        "alt": "Caramel Drip Lip Gloss",
+        "keywords": [
+            "lip gloss",
+            "gloss",
+            "caramel"
+  ]
+    },
+    {
+        "id": "blending-sponge",
+        "name": "Blending Sponge",
+        "category": "Tools",
+        "price": null,
+  "stock": "in-stock",
+  "shades": "",
+  "description": "Soft, durable sponge for flawless foundation application.",
+  "image": "assets/images/blending-sponge.webp",
+  "alt": "Blending Sponge",
+  "keywords": [
+   "sponge",
+   "blending sponge"
+  ]
     }
 ]
