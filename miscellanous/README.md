@@ -138,7 +138,7 @@ Changes were committed regularly with descriptive messages. The site is deployed
 
 ## Changelog
 
-### Part 3 — *[DD Month 2026]*
+### Part 3 — *[28 October 2026]*
 **Added**
 - `assets/js/forms.js`: client-side validation, inline error messages, character counters, honeypot, enquiry price/availability response, contact email compiler (`mailto:` + copy), optional AJAX endpoint, and `?product=&shade=` pre-fill of the enquiry form.
 - `assets/js/enhancements.js`: mobile navigation toggle, scroll animations, accordion, lightbox, Leaflet store map and the dynamic product catalogue with search, category filter and sort.
@@ -162,17 +162,19 @@ Changes were committed regularly with descriptive messages. The site is deployed
 **Changed**
 - Unique, keyword-focused titles and meta descriptions for every page; navigation labels standardised (HOME, ABOUT, PRODUCTS, CONTACT, MUA TRADE PORTAL, ENQUIRY).
 - Images renamed to descriptive names without spaces or brackets (e.g. `eye-shadow.jpg (2).webp` → `eye-palette.webp`, `Nyx-freezie.jpg.webp` → `face-freezie-primer.webp`) and the two large JPGs converted to WebP (`matte-foundation.webp`, `caramel-drip-lip-gloss.webp`).
+- All 20 supplied product photos now appear on the Products page (catalogue cards, a two-image foundation gallery and a banner); products without a photo were removed from the catalogue until photos are available, and photos display in full (`object-fit: contain`) rather than cropped.
 - Home page category cards now open the product page pre-filtered (`?category=Face`, etc.).
 - Forms rebuilt with labels, `autocomplete`, length limits and optional-field hints.
 
-**Part 2 feedback → changes** *[Add one line per piece of feedback you received, then delete this note]*
-- *Feedback:* [lecturer comment] → *Change:* [what changed, which file] → *Reason:* [why].
+**Part 2 feedback → changes** 
+- *Feedback:* CSS styling for desktop: CSS-Pseudo classes → 
+- *Feedback:* Responsive design media
 
-### Part 2 — *[DD Month 2026]*
+### Part 2 — *[18 September 2026]*
 - Added `assets/css/style.css`, responsive design, wishlist (`localStorage`), and documentation. *[Add detail and your Part 1 feedback changes.]*
 
-### Part 1 — *[DD Month 2026]*
-- Proposal document and semantic HTML structure for six pages. *[Add detail.]*
+### Part 1 — *[14 August 2026]*
+- Proposal document and semantic HTML structure for six pages. 
 
 ---
 
