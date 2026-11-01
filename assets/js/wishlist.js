@@ -4,6 +4,8 @@
 // between pages and visits (no backend/account system required).
 
 const WISHLIST_KEY = "katt-wishlist";
+const WISHLIST_BASE = location.pathname.includes("/pages/") ? "../" : "";
+let productNaames = {}; // Will be populated with product names from products.json
 
 function getWishlist() {
   try {
@@ -16,27 +18,24 @@ function getWishlist() {
 function saveWishlist(items) {
   try {
     localStorage.setItem(WISHLIST_KEY, JSON.stringify(items));
-  }
-  catch (e) {
+  }catch (e) {
     /* Storage unavailable (private mode) - wishlist just wont persist*/
   }
 }
 
-const productNames = {};
-
-function isInWishlist(productId) {
-  return getWishlist().includes(productId);
+function isWishlist(productId) {
+  return getWsishlist().includes(productId); // Check if a product is in the wishlist
 }
 
 function toggleWishlistItem(productId) {
-  let items = getWishlist();
+  let items = getWishlist(); // Get current wishlist items
   if (items.includes(productId)) {
-    items = items.filter((id) => id !== productId);
+    items = items.filter((id) => id !== productId); // Remove item if it exists
   } else {
-    items.push(productId);
+    items.push(productId); // Add item if it doesn't exist
   }
-  saveWishlist(items);
-  return items.includes(productId);
+  saveWishlist(items); // Save updated wishlist
+  return items.includes(productId); // Return whether the item is now in the wishlist
 }
 
 function renderWishlistButtons() {
