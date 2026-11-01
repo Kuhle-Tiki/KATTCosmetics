@@ -38,16 +38,16 @@ function toggleWishlistItem(productId) {
   return items.includes(productId); // Return whether the item is now in the wishlist
 }
 
-function renderWishlistButtons() {
+function renderWishlistButtons() { // Update all wishlist buttons on the page to reflect the current state
   document.querySelectorAll(".wishlist-btn").forEach((btn) => {
     const productId = btn.getAttribute("data-product-id");
-    const active = isInWishlist(productId);
+    const active = isInWishlist(productId); // Check if the product is in the wishlist
     btn.setAttribute("aria-pressed", active ? "true" : "false");
     btn.textContent = active ? "Remove from Wishlist" : "Add to Wishlist";
   });
 }
 
-function renderWishlistSection() {
+function renderWishlistSection() { // Update the wishlist section on the page to reflect the current state
   const list = document.getElementById("wishlist-list");
   const emptyMessage = document.getElementById("wishlist-empty-message");
   if (!list) return;
@@ -58,17 +58,17 @@ function renderWishlistSection() {
   if (emptyMessage) emptyMessage.hidden = items.length > 0;
     
   items.forEach((productId) => {
-    const li = document.createElement("li");
+    const li = document.createElement("li"); // Create a list item for each product in the wishlist
     li.textContent = (productNames[productId] || productId) + " "; // Fallback to productId if name not found
 
     const removeBtn = document.createElement("button");
     removeBtn.type = "button";
-    removeBtn.textContent = "Remove";
+    removeBtn.textContent = "Remove"; // Button to remove the item from the wishlist
     removeBtn.setAttribute("aria-label", "Remove " + (productNames[productId] || productId) + " from wishlist");
     removeBtn.addEventListener("click", () => {
-      toggleWishlistItem(productId);
+      toggleWishlistItem(productId); // Remove the item from the wishlist
       renderWishlistButtons();
-      renderWishlistSection();
+      renderWishlistSection(); // Update the wishlist section to reflect the change
     });
 
     li.appendChild(removeBtn);

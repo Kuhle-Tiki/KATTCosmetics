@@ -7,7 +7,7 @@
         "stock": "in-stock",
         "shades": "24 shades",
         "description": "Full-coverage, long-wearing matte foundation built for studio lighting and everyday life.",
-        "image": "assests/images/matte-foundation.webp",
+        "image": "assets/images/matte-foundation-bottle.webp",
         "alt": "24HR Matte Foundation bottle",
         "keywords": [
             "foundation",
@@ -32,21 +32,6 @@
   ]
     },
     {
-        "id": "glaze-foundation",
-        "name": "Glaze Foundation",
-        "category": "Face",
-        "price": null,
-        "stock": "in-stock",
-        "shades": "",
-        "description": "A lightweight foundation for a natural finish.",
-        "image": "assets/images/glaze-foundation.webp",
-        "alt": "Glaze Foundation bottle",
-        "keywords": [
-            "glaze",
-            "foundation"
-  ]
-    },
-    {
         "id": "face-glue-primer",
         "name": "Face Glue Primer",
         "category": "Face",
@@ -55,7 +40,7 @@
         "shades": "",
         "description": "A sticky-textured primer, perfect for long-lasting wear.",
         "image": "assets/images/face-glue-primer.webp",
-        "alt": "Face Glue Primer tube",
+        "alt": "NYX best-seling setting sprays, including Face Glue Primer",
         "keywords": [
             "face glue",
             "glue primer",
@@ -78,53 +63,7 @@
   ]
     },
     {
-        "id": "full-coverage-concealer",
-        "name": "Full Coverage Concealer",
-        "category": "Face",
-        "price": 100,
-        "stock": "in-stock",
-        "shades": "",
-        "description": "High-coverage concealer for correcting and brightening.",
-        "image": "",
-        "alt": "",
-        "keywords": [
-            "concealer"
-  ]   
-    },
-    {
-        "id": "blur-setting-powder",
-        "name": "Blur Setting Powder",
-        "category": "Face",
-        "price": 150,
-        "stock": "in-stock",
-        "shades": "",
-        "description": "A translucent powder that sets makeup with a soft-blur matte finish.",
-        "image": "",
-        "alt": "",
-        "keywords": [
-            "setting powder",
-            "powder",
-            "blur"
-  ]
-    },
-    {
-        "id": "dewy-skin-tint",
-        "name": "Dewy Skin Tint",
-        "category": "Face",
-        "price": 200,
-        "stock": "in-stock",
-        "shades": "",
-        "description": "Lightweight tint for a fresh, dewy everyday look.",
-        "image": "",
-        "alt": "",
-        "keywords": [
-            "skin tint",
-            "tint",
-            "dewy"
-  ] 
-    },
-    {
-       "id": "editorial-eye-palette",
+        "id": "editorial-eye-palette",
         "name": "Editorial Eye Shadow Palette",
         "category": "Eyes",
         "price": 200,
@@ -138,7 +77,7 @@
             "eye shadow",
             "eyeshadow",
             "palette"
-  ] 
+  ]   
     },
     {
         "id": "vibrant-eye-palette",
@@ -158,33 +97,17 @@
   ]
     },
     {
-        "id": "eye-palette",
-        "name": "Eye Palette",
-        "category": "Eyes",
-        "price": null,
-        "stock": "in-stock",
-        "shades": "",
-        "description": "A versatile palette with a range of shades for any look.",
-        "image": "assets/images/eye-palette.webp",
-        "alt": "Eye Shadow Palette",
-        "keywords": [
-            "eye palette",
-            "eye shadow",
-            "eyeshadow",
-            "palette"
-  ] 
-    },
-    {
-         "id": "eye-mascara",
+        "id": "eye-mascara",
         "name": "Eye Mascara",
         "category": "Eyes",
         "price": null,
         "stock": "in-stock",
         "shades": "",
-        "description": "Volumising and lengthening mascara for bold lashes.",
+        "description": "A volumizing mascara for dramatic, defined lashes.",
         "image": "assets/images/eye-mascara.webp",
         "alt": "Eye Mascara",
         "keywords": [
+            "eye mascara",
             "mascara"
   ]
     },
@@ -195,7 +118,7 @@
         "price": null,
         "stock": "in-stock",
         "shades": "",
-        "description": "Smooth, blendable eye pencil for precise application.",
+        "description": "A smooth, blendable eye pencil for precise application.",
         "image": "assets/images/eye-pencil.webp",
         "alt": "Eye Pencil",
         "keywords": [
@@ -203,58 +126,59 @@
             "eyeliner",
             "eye liner",
             "liner"
-  ]
+  ] 
     },
     {
         "id": "matte-lipstick",
-         "name": "Matte Lipstick",
+        "name": "Matte Lipstick",
         "category": "Lips",
-        "price": 50,
+        "price": 250,
         "stock": "in-stock",
-        "shades": "16 shades",
-        "description": "Long-lasting matte finish in a variety of shades.",
+        "shades": "",
+        "description": "A long-wearing lipstick with a smooth, velvety finish.",
         "image": "assets/images/matte-lipstick.webp",
         "alt": "Matte Lipstick",
         "keywords": [
             "matte lipstick",
             "lipstick"
-  ]
+  ] 
     },
     {
-        "id": "matte-liquid-lipstick",
+       "id": "matte-liquid-lipstick",
         "name": "Matte Liquid Lipstick",
         "category": "Lips",
-        "price": null,
+        "price": 250,
         "stock": "in-stock",
         "shades": "",
-        "description": "Smooth, creamy texture with a long-lasting matte finish.",
+        "description": "A long-wearing liquid lipstick with a smooth, velvety finish.",
         "image": "assets/images/matte-liquid-lipstick.webp",
         "alt": "Matte Liquid Lipstick",
         "keywords": [
+            "matte liquid lipstick",
             "liquid lipstick",
             "lipstick"
-  ]
-    },
+  ] 
+},
     {
         "id": "butter-lipstick",
         "name": "Butter Lipstick",
         "category": "Lips",
-        "price": null,
+        "price": 250,
         "stock": "in-stock",
         "shades": "",
-        "description": "Soft, creamy lip colour in a range of shades.",
+        "description": "A creamy, hydrating lipstick with a smooth finish.",
         "image": "assets/images/butter-lipstick.webp",
         "alt": "Butter Lipstick",
         "keywords": [
             "butter lipstick",
             "lipstick"
-  ]
+  ] 
     },
     {
         "id": "lipstick-kit",
         "name": "Lipstick Kit",
         "category": "Lips",
-        "price": null,
+        "price": 250,
         "stock": "limited",
         "shades": "",
         "description": "A complete set of lipsticks for every occasion.",
@@ -264,23 +188,23 @@
             "lipstick kit",
             "kit",
             "lipstick"
-  ]
+  ] 
     },
     {
-        "id": "caramel-drip-lip-gloss",
+       "id": "caramel-drip-lip-gloss",
         "name": "Caramel Drip Lip Gloss",
         "category": "Lips",
-        "price": 100,
+        "price": 250,
         "stock": "in-stock",
-        "shades": "16 shades",
+        "shades": "",
         "description": "A hydrating, high-shine lip gloss.",
         "image": "assets/images/caramel-drip-lip-gloss.webp",
         "alt": "Caramel Drip Lip Gloss",
         "keywords": [
-            "lip gloss",
+            "caramel drip",
             "gloss",
-            "caramel"
-  ]
+            "lip gloss"
+  ] 
     },
     {
         "id": "blending-sponge",
@@ -289,13 +213,13 @@
         "price": null,
         "stock": "in-stock",
         "shades": "",
-        "description": "Soft, durable sponge for flawless foundation application.",
+        "description": "A soft, spongy tool for seamless blending of makeup.",
         "image": "assets/images/blending-sponge.webp",
         "alt": "Blending Sponge",
         "keywords": [
-            "sponge",
-            "blending sponge"
-  ]
+            "blending sponge",
+            "sponge"
+  ] 
     },
     {
         "id": "professional-brushes",
@@ -304,12 +228,42 @@
         "price": null,
         "stock": "in-stock",
         "shades": "",
-        "description": "High-quality brushes for flawless makeup application.",
+        "description": "A set of high-quality brushes for professional makeup application.",
         "image": "assets/images/professional-brushes.webp",
         "alt": "Professional makeup brushes",
         "keywords": [
-            "brush",
+            "professional brushes",
             "brushes"
   ] 
-    }
+    },
+    {
+       "id": "eyeshadow-primer",
+        "name": "Eyeshadow Primer",
+        "category": "Eyes",
+        "price": null,
+        "stock": "in-stock",
+        "shades": "",
+        "description": "A primer that enhances eyeshadow color and longevity.",
+        "image": "assets/images/eyeshadow-primer.webp",
+        "alt": "Eyeshadow Primer",
+        "keywords": [
+            "eyeshadow primer",
+            "primer"
+        ]
+    },
+    {
+       "id": "makeup-kit",
+        "name": "Makeup Kit",
+        "category": "Tools",
+        "price": null,
+        "stock": "limited",
+        "shades": "",
+        "description": "A complete set of makeup essentials for every occasion.",
+        "image": "assets/images/makeup-kit.webp",
+        "alt": "Makeup Kit",
+        "keywords": [
+            "makeup kit",
+            "kit"
+  ]
+}
 ]
